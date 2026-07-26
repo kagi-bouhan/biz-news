@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社たろう ウィークリー・セキュリティ情報</title>
+<meta name="description" content="株式会社たろうがお届けする週刊セキュリティ情報（2026年7月27日号）。IPA相談窓口の四半期状況、ランサム対策、展示会・補助金情報をコンパクトに整理。">
+<style>
+:root{ --navy:#0e6e8a; --navy2:#1596b4; --brass:#f39c12; --brass-dk:#c87f0a; --ink:#20262c; --muted:#6b7580; --line:#e4e7ea; --tint:#eaf5f8; --link:#0e6e8a; --memo-bg:#eaf5f8; --memo-bd:#0e6e8a; --strong-bg:#fdf3e0; --strong-bd:#f39c12; }
+*{box-sizing:border-box;}
+body{margin:0; color:var(--ink); background:#f4f6f8; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",system-ui,sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased;}
+.wrap{max-width:820px; margin:0 auto; background:#fff;}
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%); color:#fff; padding:34px 32px 30px;}
+header .title{display:flex; align-items:center; gap:14px; margin:0; font-size:31px; font-weight:800; letter-spacing:.02em;}
+header .title .ico{font-size:34px; line-height:1;}
+header .sub{margin:12px 0 0; font-size:15px; color:#e3e8ee; font-weight:400;}
+header .sub .date{color:#fff; font-weight:600;}
+main{padding:28px 32px 8px;}
+.section-h{display:flex; align-items:baseline; gap:12px; border-left:5px solid var(--navy); padding-left:12px; margin:30px 0 14px;}
+.section-h .ico{font-size:22px;}
+.section-h h2{margin:0; font-size:21px; font-weight:800; color:var(--navy);}
+.section-h .note{font-size:13px; color:var(--muted);}
+.section-h.key{border-left-color:var(--brass);}
+.section-h.key h2{color:var(--brass-dk);}
+.section-h.key .badge{font-size:11px; font-weight:800; color:#fff; background:var(--brass); border-radius:5px; padding:2px 8px; margin-left:2px;}
+details{border:1px solid var(--line); border-radius:12px; background:#fff; margin:0 0 14px; overflow:hidden; box-shadow:0 1px 2px rgba(15,43,70,.04);}
+details[open]{background:var(--tint);}
+summary{list-style:none; cursor:pointer; padding:16px 18px; display:flex; align-items:flex-start; gap:10px; font-size:16.5px; font-weight:700; color:var(--ink);}
+summary::-webkit-details-marker{display:none;}
+summary .toggle{margin-left:auto; color:var(--brass-dk); font-size:22px; font-weight:700; line-height:1; flex:none;}
+details[open] summary .toggle::after{content:"–";}
+details:not([open]) summary .toggle::after{content:"+";}
+.tag{display:inline-block; font-size:12px; font-weight:700; color:var(--navy2); background:#e6eaee; border-radius:6px; padding:3px 9px; margin-left:6px; vertical-align:2px; flex:none;}
+.body{padding:2px 18px 18px; border-top:1px dashed var(--line); margin-top:-2px;}
+.body p{margin:12px 0 8px; font-size:15px;}
+.src{font-size:13.5px;}
+.src a{color:var(--link); text-decoration:none; border-bottom:1px solid rgba(55,90,122,.35);}
+.term{font-size:13px; color:var(--muted); background:#f2f5f8; border-radius:6px; padding:8px 12px; margin:10px 0 0;}
+.term b{color:var(--navy2);}
+.strong{background:var(--strong-bg); border-left:5px solid var(--strong-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.strong h3{margin:0 0 6px; font-size:16px; color:var(--brass-dk);}
+.strong p{margin:0; font-size:15px;}
+.memo{background:var(--memo-bg); border-left:5px solid var(--memo-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.memo h3{margin:0 0 6px; font-size:16px; color:var(--memo-bd);}
+.memo p{margin:0; font-size:15px;}
+footer{margin-top:26px; padding:18px 32px 26px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted); text-align:center;}
+a{color:var(--link);}
+@media print{ body{background:#fff;} .wrap{max-width:none;} details{break-inside:avoid; box-shadow:none;} }
+</style>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "株式会社たろう",
+"url": "https://news.kagi.work/",
+"description": "愛知県を中心に活動する、中小企業・個人向けのネットワークセキュリティ／IT・パソコンサポート会社。ネットセキュリティやパソコン全般の相談に最高のフットワークで対応し、『パソコンで困った』を電話一本ですぐ解決する“解決やさん”。ウイルス・ランサムウェア対策、ネットワーク設定、トラブル復旧、機器導入をワンストップで支援する。",
+"areaServed": [
+{
+"@type": "State",
+"name": "愛知県"
+},
+{
+"@type": "City",
+"name": "名古屋市"
+}
+],
+"knowsAbout": [
+"ネットワークセキュリティ",
+"ランサムウェア対策",
+"ウイルス対策",
+"パソコン修理",
+"IT相談",
+"ネットワーク構築",
+"データ復旧・バックアップ",
+"サポート詐欺対策"
+],
+"address": {
+"@type": "PostalAddress",
+"addressRegion": "愛知県",
+"addressCountry": "JP"
+}
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1 class="title"><span class="ico">🛡️</span>株式会社たろう ウィークリー・セキュリティ情報</h1>
+<p class="sub"><span class="date">2026年7月27日（月）</span> ｜ ネットワークセキュリティ・パソコンサポート 週刊まとめ</p>
+</header>
+<main>
+<div class="section-h"><span class="ico">🗞️</span><h2>業界ニュース</h2><span class="note">全国</span></div>
+<details open="">
+<summary>IPAのサイバーセキュリティ相談窓口 2026年第2四半期の対応は302件<span class="tag">動向</span><span class="toggle"></span></summary>
+<div class="body">
+<p>IPA（情報処理推進機構）が2026年第2四半期（4〜6月）のサイバーセキュリティ相談窓口の状況を公開した。相談対応件数は302件で、前四半期から約6.7％増加している。</p>
+<p>件数そのものより注目したいのは、相談が「起きてから」寄せられがちだという点。感染や不正アクセスが発覚してからでは、復旧費用も業務停止時間も跳ね上がる。気になる挙動の段階で相談できる先を決めておくことが、実質的なコスト削減になる。</p>
+<p class="src">出典: <a href="https://www.ipa.go.jp/security/support/reports/2026q2outline.html" target="_blank" rel="noopener">IPA サイバーセキュリティ相談窓口の相談状況［2026年第2四半期］</a></p>
+</div>
+</details>
+<details>
+<summary>ランサム攻撃は6年連続で組織向け脅威の1位 二重恐喝が定着<span class="tag">脅威</span><span class="toggle"></span></summary>
+<div class="body">
+<p>IPAの「情報セキュリティ10大脅威 2026」でも、ランサム攻撃による被害が組織編の1位となり、6年連続の首位となっている。</p>
+<p>データを暗号化して身代金を要求するだけでなく、盗んだ情報を公開すると脅す二重恐喝の手口が一般化している。バックアップさえあれば安心とは言えなくなっており、バックアップの隔離保管と、そもそも侵入させない入口対策の両方が必要になる。</p>
+<p>取引先経由で侵入されるサプライチェーン型の被害も続いている。自社の対策状況を取引先から問われる場面も増えてきた。</p>
+<p class="src">出典: <a href="https://www.ipa.go.jp/security/10threats/10threats2026.html" target="_blank" rel="noopener">IPA 情報セキュリティ10大脅威 2026</a></p>
+</div>
+</details>
+<div class="section-h key"><span class="ico">⚠️</span><h2>制度・法改正ウォッチ</h2><span class="badge">重点</span><span class="note">要チェック</span></div>
+<details>
+<summary>障害者の法定雇用率が7月1日から2.7％へ 対象は従業員37.5人以上<span class="tag">法改正</span><span class="toggle"></span></summary>
+<div class="body">
+<p>2026年7月1日から、民間企業の障害者法定雇用率が2.5％から2.7％へ引き上げられた。あわせて雇用義務の対象範囲が広がり、常用労働者37.5人以上の事業主が対象となる。</p>
+<p>IT分野はリモート勤務や短時間勤務との相性がよく、業務の切り出し方を工夫すれば対応しやすい。逆に、対象になったことに気づかないまま納付金の通知を受けるケースに注意したい。</p>
+<p>常用労働者100人超で未達成の場合は障害者雇用納付金の対象となり、不足1人あたり月5万円（常用労働者200人以下は月4万円）が徴収される。自社の算定人数を早めに確認しておきたい。</p>
+<p class="src">出典: <a href="https://www.mhlw.go.jp/content/001064502.pdf" target="_blank" rel="noopener">厚生労働省 リーフレット（障害者の法定雇用率引上げと支援策の強化について）</a></p>
+<p class="term"><b>除外率制度</b>＝障害者の就業が難しいとされる業種の雇用義務を軽減する仕組み。2025年4月に各業種一律10ポイント引き下げられており、建設業・運送業なども対象が実質的に広がっている。</p>
+</div>
+</details>
+<div class="section-h"><span class="ico">🎪</span><h2>展示会・イベント情報</h2><span class="note">参加無料</span></div>
+<details>
+<summary>第15回 情報セキュリティEXPO［秋］（10月21日〜23日・幕張メッセ）<span class="tag">展示会</span><span class="toggle"></span></summary>
+<div class="body">
+<p>セキュリティ製品・サービスが集まる展示会。EDR、ゼロトラスト、バックアップ、脆弱性管理などを横並びで比較できる。</p>
+<p>会期は2026年10月21日（水）〜23日（金）、会場は幕張メッセ。入場方法・併催展の構成は公式サイトで<strong>要確認</strong>。中小規模向けの手頃な製品も年々増えている。</p>
+<p class="src">出典: <a href="https://www.m-messe.co.jp/event/detail/8211" target="_blank" rel="noopener">幕張メッセ 第15回 情報セキュリティEXPO 秋</a></p>
+</div>
+</details>
+<div class="section-h"><span class="ico">💰</span><h2>お客様が使える補助金・助成金</h2><span class="note">自治体ごとに異なります</span></div>
+<details>
+<summary>中小企業省力化投資補助金（一般型）第7回 締切は今週7月31日17時<span class="tag">補助金</span><span class="toggle"></span></summary>
+<div class="body">
+<p>人手不足に悩む中小企業の省力化投資を支援する制度。第7回は2026年7月1日10時に受付が始まり、締切は7月31日17時。今週が最終週にあたる。業務システムやネットワーク機器の刷新も、省力化の事業計画に位置づけられれば対象になり得る。</p>
+<p>申請にはGビズIDプライムアカウントが必要で、取得に日数がかかる。今回は生産性向上支援センターの支援を受けた事業者向けの加点が新設されている。第8回の公募スケジュールは本稿作成時点で公表されておらず、<strong>要確認</strong>。</p>
+<p class="src">出典: <a href="https://shoryokuka.smrj.go.jp/ippan/schedule/" target="_blank" rel="noopener">中小企業省力化投資補助金（一般型）スケジュール</a></p>
+</div>
+</details>
+<div class="strong">
+<h3>💡 株式会社たろうの強み視点</h3>
+<p>セキュリティの相談で一番もったいないのは、「これくらいで連絡していいのかな」と迷っているうちに被害が広がってしまうことです。株式会社たろうは愛知県を中心に、パソコンで困ったを電話一本ですぐ解決する“解決やさん”として、最高のフットワークでお伺いします。ウイルス・ランサムウェア対策からネットワーク設定、トラブル復旧、機器の入替までワンストップで対応しますので、「様子がおかしい」という段階でお気軽にご連絡ください。</p>
+</div>
+<div class="memo">
+<h3>📝 今週のひとことメモ</h3>
+<p>バックアップは「取っているか」より「戻せるか」。半年に一度でいいので、実際に1ファイル復元してみる時間を取っておくと、いざというときの判断が段違いに速くなる。</p>
+</div>
+
+</main>
+<footer>
+株式会社たろう ウィークリー・セキュリティ情報 ｜ 週刊 業界情報ダイジェスト<br>
+※他社記事・写真は転載せず、要点を要約し出典リンクで掲載しています。各情報は出典元をご確認ください。
+</footer>
+</div>
+</body>
+</html>
