@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="株式会社たろうの週刊セキュリティ情報（2026年8月10日号）。中小企業向けネットワークセキュリティ・PCサポートの最新動向、制度改正、支援制度、補助金を整理。">
+<title>株式会社たろう ウィークリー・セキュリティ情報</title>
+<style>
+:root{ --navy:#0e6e8a; --navy2:#1596b4; --brass:#f39c12; --brass-dk:#c87f0a; --ink:#20262c; --muted:#6b7580; --line:#e4e7ea; --tint:#eaf5f8; --link:#0e6e8a; --memo-bg:#eaf5f8; --memo-bd:#0e6e8a; --strong-bg:#fdf3e0; --strong-bd:#f39c12; }
+*{box-sizing:border-box;}
+body{margin:0; color:var(--ink); background:#f4f6f8; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",system-ui,sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased;}
+.wrap{max-width:820px; margin:0 auto; background:#fff;}
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%); color:#fff; padding:34px 32px 30px;}
+header .title{display:flex; align-items:center; gap:14px; margin:0; font-size:31px; font-weight:800; letter-spacing:.02em;}
+header .title .ico{font-size:34px; line-height:1;}
+header .sub{margin:12px 0 0; font-size:15px; color:#e3e8ee; font-weight:400;}
+header .sub .date{color:#fff; font-weight:600;}
+main{padding:28px 32px 8px;}
+.section-h{display:flex; align-items:baseline; gap:12px; border-left:5px solid var(--navy); padding-left:12px; margin:30px 0 14px;}
+.section-h .ico{font-size:22px;}
+.section-h h2{margin:0; font-size:21px; font-weight:800; color:var(--navy);}
+.section-h .note{font-size:13px; color:var(--muted);}
+.section-h.key{border-left-color:var(--brass);}
+.section-h.key h2{color:var(--brass-dk);}
+.section-h.key .badge{font-size:11px; font-weight:800; color:#fff; background:var(--brass); border-radius:5px; padding:2px 8px; margin-left:2px;}
+details{border:1px solid var(--line); border-radius:12px; background:#fff; margin:0 0 14px; overflow:hidden; box-shadow:0 1px 2px rgba(15,43,70,.04);}
+details[open]{background:var(--tint);}
+summary{list-style:none; cursor:pointer; padding:16px 18px; display:flex; align-items:flex-start; gap:10px; font-size:16.5px; font-weight:700; color:var(--ink);}
+summary::-webkit-details-marker{display:none;}
+summary .toggle{margin-left:auto; color:var(--brass-dk); font-size:22px; font-weight:700; line-height:1; flex:none;}
+details[open] summary .toggle::after{content:"\2013";}
+details:not([open]) summary .toggle::after{content:"+";}
+.tag{display:inline-block; font-size:12px; font-weight:700; color:var(--navy2); background:#e6eaee; border-radius:6px; padding:3px 9px; margin-left:6px; vertical-align:2px; flex:none;}
+.body{padding:2px 18px 18px; border-top:1px dashed var(--line); margin-top:-2px;}
+.body p{margin:12px 0 8px; font-size:15px;}
+.src{font-size:13.5px;}
+.src a{color:var(--link); text-decoration:none; border-bottom:1px solid rgba(55,90,122,.35);}
+.term{font-size:13px; color:var(--muted); background:#f2f5f8; border-radius:6px; padding:8px 12px; margin:10px 0 0;}
+.term b{color:var(--navy2);}
+.strong{background:var(--strong-bg); border-left:5px solid var(--strong-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.strong h3{margin:0 0 6px; font-size:16px; color:var(--brass-dk);}
+.strong p{margin:0; font-size:15px;}
+.memo{background:var(--memo-bg); border-left:5px solid var(--memo-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.memo h3{margin:0 0 6px; font-size:16px; color:var(--memo-bd);}
+.memo p{margin:0; font-size:15px;}
+footer{margin-top:26px; padding:18px 32px 26px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted); text-align:center;}
+a{color:var(--link);}
+@media print{ body{background:#fff;} .wrap{max-width:none;} details{break-inside:avoid; box-shadow:none;} }
+</style>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "株式会社たろう",
+"url": "https://news.kagi.work/",
+"description": "愛知県を中心に活動する、中小企業・個人向けのネットワークセキュリティ／IT・パソコンサポート会社。ネットセキュリティやパソコン全般の相談に最高のフットワークで対応し、『パソコンで困った』を電話一本ですぐ解決する“解決やさん”。ウイルス・ランサムウェア対策、ネットワーク設定、トラブル復旧、機器導入をワンストップで支援する。",
+"areaServed": [
+{"@type": "State","name": "愛知県"},
+{"@type": "City","name": "名古屋市"}
+],
+"knowsAbout": ["ネットワークセキュリティ","ランサムウェア対策","ウイルス対策","パソコン修理","IT相談","ネットワーク構築","データ復旧・バックアップ","サポート詐欺対策"],
+"address": {"@type": "PostalAddress","addressRegion": "愛知県","addressCountry": "JP"}
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1 class="title"><span class="ico">🛡️</span>株式会社たろう ウィークリー・セキュリティ情報</h1>
+<p class="sub"><span class="date">2026年8月10日（月）</span> ｜ ネットワークセキュリティ・パソコンサポート 週刊まとめ</p>
+</header>
+<main>
+<div class="section-h"><span class="ico">🗞️</span><h2>業界ニュース</h2><span class="note">全国</span></div>
+<details open="">
+<summary>中部電力が8月4日に不正アクセスを公表 資格情報の悪用で最大7万4,100人分の連絡先が漏えいの恐れ<span class="tag">安全</span><span class="toggle"></span></summary>
+<div class="body">
+<p>中部電力は2026年8月4日、社内システムの一部が不正アクセスを受け、役職員のメールアドレスや連絡先情報が外部に流出した可能性があると公表した。きっかけは7月29日に外部機関から受けた情報提供で、調査の結果、一部システムの資格情報が第三者に不正利用されていたことが判明している。</p>
+<p>影響範囲は、関係機関・自治体・取引先の担当者約2,400人分と、グループ役職員・委託先社員約7万1,700人分の氏名や役職、メールアドレス、電話番号など。報道ベースでは合計最大7万4,100人分とされ、8月4日時点で電気・ガスの契約者情報の流出は確認されていないとしている。</p>
+<p>愛知県に本社を置く大手企業でも、侵入の起点が「盗まれたID・パスワード」だった点は中小企業に直結する教訓になる。VPNやクラウドの管理者アカウントに多要素認証を必須化し、退職者・委託先アカウントの棚卸しを四半期ごとに回す運用を、この機会に見直しておきたい。</p>
+<p class="src">出典: <a href="https://www.chuden.co.jp/publicity/press/1218169_3273.html" target="_blank" rel="noopener">中部電力 ニュースリリース「不正アクセスによる情報漏えいの可能性について」</a></p>
+<p class="term"><b>資格情報の不正利用</b>＝正規のID・パスワードを窃取した攻撃者が本人になりすまして侵入する手口。機器の脆弱性を突かないためログ上は正常な接続に見えやすい。</p>
+</div>
+</details>
+<details>
+<summary>「ITトレンド」運営のイノベーションでGitHub認証情報が漏えい 最大6万件の個人情報流出か（8月4日公表）<span class="tag">安全</span><span class="toggle"></span></summary>
+<div class="body">
+<p>IT製品比較サイト「ITトレンド」などを運営するイノベーションは2026年8月4日、グループ内でソフトウェア開発やシステム管理に使っていたGitHubの認証情報が漏えいし、第三者から不正アクセスを受けたと発表した。最大でおよそ6万件の個人情報が外部に流出した可能性があるとしている。</p>
+<p>開発基盤のトークンやアクセスキーが漏れると、そこに保管されたソースコードや接続設定を通じて本番環境まで一気に到達される。中小企業でも、外注先に渡したリポジトリ権限やクラウドのAPIキーが管理台帳に載っていないケースは珍しくなく、同じ経路が現実的なリスクになる。</p>
+<p>対策としては、開発・保守を委託している場合の権限一覧の可視化、長期間有効なトークンの期限付き発行への切り替え、ソースコードへの認証情報の直書き禁止といった基本の徹底が効く。年次点検メニューに組み込んでおくと運用が続きやすい。</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2608/05/2000000396/" target="_blank" rel="noopener">ITmedia NEWS「最大6万件の個人情報流出か 『ITトレンド』など運営のイノベーション、GitHubの認証情報漏えいで」</a></p>
+<p class="term"><b>アクセストークン</b>＝ID・パスワードの代わりにシステム間の認証に使う文字列。漏えいすると本人確認を経ずに操作されるため、有効期限と権限範囲の絞り込みが必須。</p>
+</div>
+</details>
+<div class="section-h key"><span class="ico">⚠️</span><h2>制度・法改正ウォッチ</h2><span class="badge">重点</span><span class="note">要チェック</span></div>
+<details>
+<summary>改正個人情報保護法が2026年7月10日に成立 初の課徴金制度、公布後2年以内に全面施行<span class="tag">制度</span><span class="toggle"></span></summary>
+<div class="body">
+<p>2026年4月7日に閣議決定・国会提出された個人情報保護法の改正案が、同年7月10日に可決・成立した。公布から2年以内の全面施行が予定されており、施行日の詳細および政令・ガイドラインの内容は今後の公表待ちで<strong>要確認</strong>である。</p>
+<p>改正の柱は、悪質な違反に対する課徴金制度の導入、特定生体個人情報の規律新設、こどもの個人情報保護の強化、委託先規律の整理など。日本の個人情報保護法制で初めて金銭を徴収する枠組みが入る点が最大の変化で、従業員規模による一律の免除は想定されていない。</p>
+<p>中小企業が現実に問われるのは「重大な安全管理措置の不備」である。保有する個人データの棚卸し、アクセス権限とログの整備、サポート終了OSの残置解消といった地味な作業が、そのまま説明責任の材料になる。施行までの2年間を準備期間と考えたい。</p>
+<p class="src">出典: <a href="https://www.nozomisogo.gr.jp/newsletter/13819" target="_blank" rel="noopener">のぞみ総合法律事務所「2026年（令和8年）改正個人情報保護法の概要（第1回）」</a></p>
+<p class="term"><b>課徴金</b>＝行政が違反行為で得た不当な利益を金銭として徴収する制度。刑事罰とは別枠のため刑事手続を経ずに命令できる。</p>
+</div>
+</details>
+<div class="section-h"><span class="ico">🎪</span><h2>展示会・イベント情報</h2><span class="note">参加無料</span></div>
+<details>
+<summary>愛知県「セキュリティ教育伴走支援プログラム」は参加費無料 8月21日17時締切で県内中小15社を募集<span class="tag">募集</span><span class="toggle"></span></summary>
+<div class="body">
+<p>愛知県は県内中小企業向けの「セキュリティ教育伴走支援プログラム」の参加企業を募集している。募集期間は2026年7月8日（水）から8月21日（金）17時まで、参加費は無料で、募集数は15社程度。申込多数の場合は選定のうえ、8月下旬にメールで結果が通知される。</p>
+<p>実施時期は選定後の2026年秋頃から約3か月間で、標的型メール訓練やeラーニングを実運用しながら、現状の可視化から次の打ち手までを支援事業者が伴走する内容になっている。</p>
+<p>応募条件として「あいち産業DX推進コンソーシアム」会員であることが求められ、情報通信業・コンサルティング業・金融業を営む企業は対象外とされている。実施場所や開催形式は募集ページの記載を個別に確認する必要があり<strong>要確認</strong>。</p>
+<p class="src">出典: <a href="https://www.pref.aichi.jp/site/aichi-pref-iot/security-shienn-2026.html" target="_blank" rel="noopener">愛知県「中小企業のための『セキュリティ教育伴走支援プログラム』参加企業募集」</a></p>
+<p class="term"><b>標的型メール訓練</b>＝業務メールを装った疑似攻撃メールを従業員に送り、開封率や報告率を測って教育につなげる訓練手法。</p>
+</div>
+</details>
+<div class="section-h"><span class="ico">💰</span><h2>お客様が使える補助金・助成金</h2><span class="note">自治体ごとに異なります</span></div>
+<details>
+<summary>デジタル化・AI導入補助金2026「セキュリティ対策推進枠」 4次締切は8月25日17時、交付決定は10月7日予定<span class="tag">補助金</span><span class="toggle"></span></summary>
+<div class="body">
+<p>旧「IT導入補助金」は令和8年度から「デジタル化・AI導入補助金2026」に名称が変わった。通常枠・インボイス枠・セキュリティ対策推進枠の4次締切は2026年8月25日（火）17時で、交付決定日は2026年10月7日（水）の予定とされている。</p>
+<p>締切に間に合わない場合も、5次が2026年9月29日（火）、6次が2026年10月30日（金）に設定されている。セキュリティ対策推進枠は、サイバー保険やセキュリティサービスの導入費用を対象にできる枠で、中小企業の防御水準を底上げする用途に向く。</p>
+<p>申請にはIT導入支援事業者の選定と、SECURITY ACTION自己宣言IDの登録が前提になる。締切当日17時を過ぎると理由を問わず受け付けられないため、逆算して2週間以上の余裕をみて準備したい。最新スケジュールは<strong>要確認</strong>。</p>
+<p class="src">出典: <a href="https://it-shien.smrj.go.jp/schedule/" target="_blank" rel="noopener">中小企業基盤整備機構「デジタル化・AI導入補助金2026 事業スケジュール」</a></p>
+</div>
+</details>
+<div class="strong">
+<h3>💡 株式会社たろうの強み視点</h3>
+<p>今週の2件はどちらも「ID・パスワードや鍵が盗まれた」ことが入口でした。難しい攻撃を防ぐ前に、使っていないアカウントが残っていないか、パスワードが使い回されていないか——この確認だけで塞げる穴は本当に多いのです。たろうは愛知県を中心に、「パソコンで困った」を電話一本ですぐ解決する“解決やさん”として動いています。ウイルス対策やネットワーク設定はもちろん、「うちは何から手をつければいいのか」という段階のご相談こそ歓迎です。最高のフットワークで、まずは現状を一緒に見に行きます。気になったその日にお声がけください。</p>
+</div>
+<div class="memo">
+<h3>📝 今週のひとことメモ</h3>
+<p>セキュリティの話は、つい機器やソフトの名前から入りがちです。でも今週の事例はどちらも入口が「アカウント」でした。まずは社内で使っているIDの一覧を紙に書き出すところから。それだけで、次に何を買うべきかが見えてきます。</p>
+</div>
+</main>
+<footer>
+株式会社たろう ウィークリー・セキュリティ情報 ｜ 週刊 業界情報ダイジェスト<br>
+※他社記事・写真は転載せず、要点を要約し出典リンクで掲載しています。各情報は出典元をご確認ください。
+</footer>
+</div>
+</body>
+</html>
