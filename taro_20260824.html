@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="株式会社たろうの週刊セキュリティ情報（2026年8月24日号）。ネットワークセキュリティ・パソコンサポートの最新動向、制度、イベント、補助金をコンパクトに整理。">
+<title>株式会社たろう ウィークリー・セキュリティ情報</title>
+<style>
+:root{ --navy:#0e6e8a; --navy2:#1596b4; --brass:#f39c12; --brass-dk:#c87f0a; --ink:#20262c; --muted:#6b7580; --line:#e4e7ea; --tint:#eaf5f8; --link:#0e6e8a; --memo-bg:#eaf5f8; --memo-bd:#0e6e8a; --strong-bg:#fdf3e0; --strong-bd:#f39c12; }
+*{box-sizing:border-box;}
+body{margin:0; color:var(--ink); background:#f4f6f8; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",system-ui,sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased;}
+.wrap{max-width:820px; margin:0 auto; background:#fff;}
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%); color:#fff; padding:34px 32px 30px;}
+header .title{display:flex; align-items:center; gap:14px; margin:0; font-size:31px; font-weight:800; letter-spacing:.02em;}
+header .title .ico{font-size:34px; line-height:1;}
+header .sub{margin:12px 0 0; font-size:15px; color:#e3e8ee; font-weight:400;}
+header .sub .date{color:#fff; font-weight:600;}
+main{padding:28px 32px 8px;}
+.section-h{display:flex; align-items:baseline; gap:12px; border-left:5px solid var(--navy); padding-left:12px; margin:30px 0 14px;}
+.section-h .ico{font-size:22px;}
+.section-h h2{margin:0; font-size:21px; font-weight:800; color:var(--navy);}
+.section-h .note{font-size:13px; color:var(--muted);}
+.section-h.key{border-left-color:var(--brass);}
+.section-h.key h2{color:var(--brass-dk);}
+.section-h.key .badge{font-size:11px; font-weight:800; color:#fff; background:var(--brass); border-radius:5px; padding:2px 8px; margin-left:2px;}
+details{border:1px solid var(--line); border-radius:12px; background:#fff; margin:0 0 14px; overflow:hidden; box-shadow:0 1px 2px rgba(15,43,70,.04);}
+details[open]{background:var(--tint);}
+summary{list-style:none; cursor:pointer; padding:16px 18px; display:flex; align-items:flex-start; gap:10px; font-size:16.5px; font-weight:700; color:var(--ink);}
+summary::-webkit-details-marker{display:none;}
+summary .toggle{margin-left:auto; color:var(--brass-dk); font-size:22px; font-weight:700; line-height:1; flex:none;}
+details[open] summary .toggle::after{content:"\2013";}
+details:not([open]) summary .toggle::after{content:"+";}
+.tag{display:inline-block; font-size:12px; font-weight:700; color:var(--navy2); background:#e6eaee; border-radius:6px; padding:3px 9px; margin-left:6px; vertical-align:2px; flex:none;}
+.body{padding:2px 18px 18px; border-top:1px dashed var(--line); margin-top:-2px;}
+.body p{margin:12px 0 8px; font-size:15px;}
+.src{font-size:13.5px;}
+.src a{color:var(--link); text-decoration:none; border-bottom:1px solid rgba(55,90,122,.35);}
+.term{font-size:13px; color:var(--muted); background:#f2f5f8; border-radius:6px; padding:8px 12px; margin:10px 0 0;}
+.term b{color:var(--navy2);}
+.strong{background:var(--strong-bg); border-left:5px solid var(--strong-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.strong h3{margin:0 0 6px; font-size:16px; color:var(--brass-dk);}
+.strong p{margin:0; font-size:15px;}
+.memo{background:var(--memo-bg); border-left:5px solid var(--memo-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.memo h3{margin:0 0 6px; font-size:16px; color:var(--memo-bd);}
+.memo p{margin:0; font-size:15px;}
+footer{margin-top:26px; padding:18px 32px 26px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted); text-align:center;}
+a{color:var(--link);}
+@media print{ body{background:#fff;} .wrap{max-width:none;} details{break-inside:avoid; box-shadow:none;} }
+</style>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "株式会社たろう",
+"url": "https://news.kagi.work/",
+"description": "愛知県を中心に活動する、中小企業・個人向けのネットワークセキュリティ／IT・パソコンサポート会社。ネットセキュリティやパソコン全般の相談に最高のフットワークで対応し、『パソコンで困った』を電話一本ですぐ解決する“解決やさん”。ウイルス・ランサムウェア対策、ネットワーク設定、トラブル復旧、機器導入をワンストップで支援する。",
+"areaServed": [
+{"@type": "State","name": "愛知県"},
+{"@type": "City","name": "名古屋市"}
+],
+"knowsAbout": ["ネットワークセキュリティ","ランサムウェア対策","ウイルス対策","パソコン修理","IT相談","ネットワーク構築","データ復旧・バックアップ","サポート詐欺対策"],
+"address": {"@type": "PostalAddress","addressRegion": "愛知県","addressCountry": "JP"}
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1 class="title"><span class="ico">🛡️</span>株式会社たろう ウィークリー・セキュリティ情報</h1>
+<p class="sub"><span class="date">2026年8月24日（月）</span> ｜ ネットワークセキュリティ・パソコンサポート 週刊まとめ</p>
+</header>
+<main>
+<div class="section-h"><span class="ico">🗞️</span><h2>業界ニュース</h2><span class="note">全国</span></div>
+<details open>
+<summary>ニチレイがランサム被害 従業員情報の漏えいの恐れを公表<span class="tag">動向</span><span class="toggle"></span></summary>
+<div class="body">
+<p>冷凍食品大手のニチレイは2026年7月、システムが不正アクセスを受けたと公表し、出荷・受注業務が一時停止しました。攻撃グループが犯行を声明し、8月には盗んだとするデータをダークウェブ上で公開したことが確認されています。</p>
+<p>同社は8月14日、攻撃を受けたサーバーに保管されていた従業員の氏名、生年月日、社用メールアドレス、人事・労務情報などが漏えいした可能性があると発表しました。データを暗号化するだけでなく、盗んだ情報の公開をちらつかせて脅す「二重恐喝」型の手口です。</p>
+<p>中小企業であっても、取引先を経由した攻撃の足がかりにされるケースは少なくありません。パスワードの使い回しやOS・ソフトの更新放置がないか、この機会に見直しておきたいところです。</p>
+<p class="src">出典: <a href="https://www.nikkei.com/article/DGXZQOUC1447A0U6A810C2000000/" target="_blank" rel="noopener">日本経済新聞「サイバー被害のニチレイ、従業員情報漏洩の恐れ」</a></p>
+<p class="term"><b>二重恐喝</b>＝データを暗号化して使えなくするだけでなく、盗み出した情報の公開をちらつかせて金銭を要求する攻撃手口。</p>
+</div>
+</details>
+<details>
+<summary>IPAが夏休み中の情報セキュリティについて注意喚起<span class="tag">動向</span><span class="toggle"></span></summary>
+<div class="body">
+<p>情報処理推進機構（IPA）は2026年7月30日、夏休みにおける情報セキュリティに関する注意喚起を公開しました。長期休暇で企業側の管理の目が届きにくくなる時期であり、インターネットに接続された機器の脆弱性を悪用する「ネットワーク貫通型攻撃」への警戒が呼びかけられています。</p>
+<p>夏季はDDoS攻撃や偽情報の拡散といった動きにも注意が必要とされています。休暇中に発生した異変に気づくのが遅れると、被害が広がりやすくなります。</p>
+<p>家庭のパソコンやスマートフォンだけでなく、ネットワークカメラやルーターなど「つなぎっぱなし」の機器がないか、休み明けにまとめて点検するのがおすすめです。</p>
+<p class="src">出典: <a href="https://www.ipa.go.jp/security/anshin/heads-up/alert20260730.html" target="_blank" rel="noopener">IPA「2026年度 夏休みにおける情報セキュリティに関する注意喚起」</a></p>
+</div>
+</details>
+<div class="section-h key"><span class="ico">⚠️</span><h2>制度・法改正ウォッチ</h2><span class="badge">重点</span><span class="note">要チェック</span></div>
+<details>
+<summary>Windows 10の企業向け猶予も10月14日で終了へ<span class="tag">安全</span><span class="toggle"></span></summary>
+<div class="body">
+<p>Windows 10は2025年10月に一般サポートが終了しましたが、企業向けの延長セキュリティ更新プログラム（ESU）などの猶予措置も2026年10月14日に終了する予定とされています。以降はセキュリティ更新が提供されなくなり、脆弱性を突いた攻撃のリスクが一気に高まります。</p>
+<p>個人向けのESUは延長が案内されていますが、業務で使われているパソコンについては買い替えやWindows 11への移行が急務です。</p>
+<p>「まだ普通に動くから」と使い続けている業務用パソコンがないか、今のうちに台数を洗い出しておくと、直前の駆け込み対応を避けられます（最新の提供条件は要確認）。</p>
+<p class="src">出典: <a href="https://haku-t.com/column/archives/windows10-support-end/" target="_blank" rel="noopener">HAKUコラム「Windows 10サポート終了後のリスクと対策【2026年版】」</a></p>
+</div>
+</details>
+<div class="section-h"><span class="ico">🎪</span><h2>展示会・イベント情報</h2><span class="note">参加無料</span></div>
+<details>
+<summary>Security Days Fall 2026 名古屋会場は10月28〜29日<span class="tag">展示会</span><span class="toggle"></span></summary>
+<div class="body">
+<p>サイバーセキュリティ専門の展示会・セミナーイベント「Security Days Fall 2026」が全国で開催されます。名古屋会場は2026年10月28日（水）・29日（木）、JPタワー名古屋 ホール&amp;カンファレンスで開かれる予定です。</p>
+<p>ランサムウェア対策や標的型攻撃、クラウドセキュリティなど幅広いテーマのセミナーと展示が予定されており、参加費は無料（来場登録制）です。</p>
+<p>最新の攻撃手口や対策の動向を業界横断で知ることができる機会で、経営者や情報システムご担当の方にもおすすめできる内容です（会期・登録方法は要確認）。</p>
+<p class="src">出典: <a href="https://f2ff.jp/event/secd" target="_blank" rel="noopener">Security Days 公式サイト</a></p>
+</div>
+</details>
+<div class="section-h"><span class="ico">💰</span><h2>お客様が使える補助金・助成金</h2><span class="note">自治体ごとに異なります</span></div>
+<details>
+<summary>セキュリティ対策推進枠 お助け隊サービス利用料を補助<span class="tag">補助金</span><span class="toggle"></span></summary>
+<div class="body">
+<p>「デジタル化・AI導入補助金2026」には、中小企業がIPA登録の「サイバーセキュリティお助け隊サービス」を導入する際、サービス利用料（最大2年分）を補助する「セキュリティ対策推進枠」が用意されています。補助上限は最大150万円、従業員20人以下などの小規模事業者は補助率が3分の2となります。</p>
+<p>直近の締切は2026年8月25日17時とされており、それ以降の日程は本稿時点で公表されていません。次回募集の有無や時期は公式サイトで随時ご確認ください（要確認）。</p>
+<p>GビズIDプライムアカウントの取得やSECURITY ACTION宣言など事前準備に時間がかかるため、導入をご検討の場合は早めのご相談をおすすめします。</p>
+<p class="src">出典: <a href="https://it-shien.smrj.go.jp/applicant/subsidy/security/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026「セキュリティ対策推進枠」</a></p>
+</div>
+</details>
+<div class="strong">
+<h3>💡 株式会社たろうの強み視点</h3>
+<p>大手企業への攻撃や夏休み明けの機器トラブルなど、今週もセキュリティに関わる話題が続きました。「うちは狙われないだろう」と思っていても、取引先経由で被害に巻き込まれることは珍しくありません。私たち“解決やさん”は、パソコンやネットワークで困ったことがあれば電話一本ですぐ動く、最高のフットワークが強みです。Windows 10のままのパソコンが残っていないか、社内のセキュリティ対策に不安はないか、些細なことでもまずはお気軽にご相談ください。愛知県を中心に、ネットワークからパソコン一台のトラブルまでワンストップでお手伝いいたします。</p>
+</div>
+<div class="memo">
+<h3>📝 今週のひとことメモ</h3>
+<p>大手企業へのランサムウェア被害が相次ぎ、Windows 10の企業向け猶予も10月に期限を迎えます。「まだ大丈夫」が一番危険な油断です。夏休み明けのこのタイミングで、社内のパソコンとセキュリティ対策を一度まとめて点検してみてください。</p>
+</div>
+</main>
+<footer>
+株式会社たろう ウィークリー・セキュリティ情報 ｜ 週刊 業界情報ダイジェスト<br>
+※他社記事・写真は転載せず、要点を要約し出典リンクで掲載しています。各情報は出典元をご確認ください。
+</footer>
+</div>
+</body>
+</html>
