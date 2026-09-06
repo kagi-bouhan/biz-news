@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="愛知県中心のネットワークセキュリティ／PCサポート「株式会社たろう」がお届けする週刊セキュリティ情報（2026年9月7日号）。脅威動向・制度・イベント・補助金をまとめています。">
+<title>株式会社たろう ウィークリー・セキュリティ情報</title>
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "LocalBusiness", "name": "株式会社たろう", "url": "https://news.kagi.work/", "description": "愛知県を中心に活動する、中小企業・個人向けのネットワークセキュリティ／IT・パソコンサポート会社。ネットセキュリティやパソコン全般の相談に最高のフットワークで対応し、『パソコンで困った』を電話一本ですぐ解決する“解決やさん”。ウイルス・ランサムウェア対策、ネットワーク設定、トラブル復旧、機器導入をワンストップで支援する。", "areaServed": [ {"@type": "State","name": "愛知県"}, {"@type": "City","name": "名古屋市"} ], "knowsAbout": ["ネットワークセキュリティ","ランサムウェア対策","ウイルス対策","パソコン修理","IT相談","ネットワーク構築","データ復旧・バックアップ","サポート詐欺対策"], "address": {"@type": "PostalAddress","addressRegion": "愛知県","addressCountry": "JP"} }
+</script>
+<style>
+:root{ --navy:#0e6e8a; --navy2:#1596b4; --brass:#f39c12; --brass-dk:#c87f0a; --ink:#20262c; --muted:#6b7580; --line:#e4e7ea; --tint:#eaf5f8; --link:#0e6e8a; --memo-bg:#eaf5f8; --memo-bd:#0e6e8a; --strong-bg:#fdf3e0; --strong-bd:#f39c12; }
+*{box-sizing:border-box;}
+body{margin:0; color:var(--ink); background:#f4f6f8; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",system-ui,sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased;}
+.wrap{max-width:820px; margin:0 auto; background:#fff;}
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%); color:#fff; padding:34px 32px 30px;}
+header .title{display:flex; align-items:center; gap:14px; margin:0; font-size:31px; font-weight:800; letter-spacing:.02em;}
+header .title .ico{font-size:34px; line-height:1;}
+header .sub{margin:12px 0 0; font-size:15px; color:#e3e8ee; font-weight:400;}
+header .sub .date{color:#fff; font-weight:600;}
+main{padding:28px 32px 8px;}
+.section-h{display:flex; align-items:baseline; gap:12px; border-left:5px solid var(--navy); padding-left:12px; margin:30px 0 14px;}
+.section-h .ico{font-size:22px;}
+.section-h h2{margin:0; font-size:21px; font-weight:800; color:var(--navy);}
+.section-h .note{font-size:13px; color:var(--muted);}
+.section-h.key{border-left-color:var(--brass);}
+.section-h.key h2{color:var(--brass-dk);}
+.section-h.key .badge{font-size:11px; font-weight:800; color:#fff; background:var(--brass); border-radius:5px; padding:2px 8px; margin-left:2px;}
+details{border:1px solid var(--line); border-radius:12px; background:#fff; margin:0 0 14px; overflow:hidden; box-shadow:0 1px 2px rgba(15,43,70,.04);}
+details[open]{background:var(--tint);}
+summary{list-style:none; cursor:pointer; padding:16px 18px; display:flex; align-items:flex-start; gap:10px; font-size:16.5px; font-weight:700; color:var(--ink);}
+summary::-webkit-details-marker{display:none;}
+summary .toggle{margin-left:auto; color:var(--brass-dk); font-size:22px; font-weight:700; line-height:1; flex:none;}
+details[open] summary .toggle::after{content:"\2013";}
+details:not([open]) summary .toggle::after{content:"+";}
+.tag{display:inline-block; font-size:12px; font-weight:700; color:var(--navy2); background:#e6eaee; border-radius:6px; padding:3px 9px; margin-left:6px; vertical-align:2px; flex:none;}
+.body{padding:2px 18px 18px; border-top:1px dashed var(--line); margin-top:-2px;}
+.body p{margin:12px 0 8px; font-size:15px;}
+.src{font-size:13.5px;}
+.src a{color:var(--link); text-decoration:none; border-bottom:1px solid rgba(55,90,122,.35);}
+.term{font-size:13px; color:var(--muted); background:#f2f5f8; border-radius:6px; padding:8px 12px; margin:10px 0 0;}
+.term b{color:var(--navy2);}
+.strong{background:var(--strong-bg); border-left:5px solid var(--strong-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.strong h3{margin:0 0 6px; font-size:16px; color:var(--brass-dk);}
+.strong p{margin:0; font-size:15px;}
+.memo{background:var(--memo-bg); border-left:5px solid var(--memo-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.memo h3{margin:0 0 6px; font-size:16px; color:var(--memo-bd);}
+.memo p{margin:0; font-size:15px;}
+footer{margin-top:26px; padding:18px 32px 26px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted); text-align:center;}
+a{color:var(--link);}
+@media print{ body{background:#fff;} .wrap{max-width:none;} details{break-inside:avoid; box-shadow:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1 class="title"><span class="ico">🛡️</span>株式会社たろう ウィークリー・セキュリティ情報</h1>
+<p class="sub"><span class="date">2026年9月7日（月）</span> ｜ ネットワークセキュリティ・パソコンサポート 週刊まとめ</p>
+</header>
+<main>
+
+<div class="section-h"><span class="ico">🗞️</span><h2>業界ニュース</h2><span class="note">全国</span></div>
+
+<details open>
+<summary>ランサム被害、IPA「10大脅威」で5年連続の1位<span class="tag">動向</span><span class="toggle"></span></summary>
+<div class="body">
+<p>IPA（情報処理推進機構）が1月29日に公表した「情報セキュリティ10大脅威 2026」で、組織向け脅威の1位は「ランサム攻撃による被害」となった。2021年以降、5年連続で1位が続いている。</p>
+<p>警察庁の集計では、2025年の被害226件のうち中小企業が143件と6割超を占めた。RaaS（Ransomware as a Service）の低価格化により、技術力のない攻撃者でも実行できるようになったことが背景として指摘されている。</p>
+<p>「うちは小さいから狙われない」が最も危ない前提になっている。規模ではなく、入りやすいかどうかで選ばれているのが実態だ。</p>
+<p class="src">出典: <a href="https://www.ipa.go.jp/security/10threats/10threats2026.html" target="_blank" rel="noopener">IPA「情報セキュリティ10大脅威 2026」</a></p>
+<p class="term"><b>RaaS</b>＝ランサムウェアを攻撃者向けにサービスとして提供する仕組み。専門知識がなくても攻撃を実行できてしまう。</p>
+</div>
+</details>
+<details>
+<summary>侵入経路はVPN機器が主役、優先すべきは5つの対策<span class="tag">動向</span><span class="toggle"></span></summary>
+<div class="body">
+<p>ランサム攻撃への備えとしては、ソフトウェア更新、パスワードの適切な管理、アクセス権限の適切な設定が基本とされる。特に主要な侵入経路であるVPN機器などの適切なアップデートが急務だと指摘されている。</p>
+<p>対策の優先順位としては、①バックアップ ②多要素認証 ③パッチ管理 ④AI利用ルールの策定 ⑤従業員教育の順に整理されている。</p>
+<p>どれも派手ではないが、順番に効く。特にバックアップは「取っている」だけでなく「戻せるか試したことがあるか」が分かれ目になる。</p>
+<p class="src">出典: <a href="https://www.ffri.jp/blog/2026/06/2026-06-03-how-to-counter-increasing-ransomware-attacks.htm" target="_blank" rel="noopener">FFRIセキュリティ「【2026年IPA 10大脅威組織編 第1位】深刻化するランサムウェア攻撃に対抗するには」</a></p>
+</div>
+</details>
+
+<div class="section-h key"><span class="ico">⚠️</span><h2>制度・法改正ウォッチ</h2><span class="badge">重点</span><span class="note">要チェック</span></div>
+
+<details>
+<summary>2026年度の最低賃金、答申ベースで全国平均1,177円<span class="tag">制度</span><span class="toggle"></span></summary>
+<div class="body">
+<p>2026年度の地域別最低賃金は、47都道府県の答申が出そろい、答申ベースの全国加重平均が1,177円となった。前年度の1,121円から56円の引き上げで、目安制度が始まった1978年度以降で2番目に大きい引き上げ幅にあたる。</p>
+<p>発効日は都道府県ごとに異なり、2026年10月1日から12月2日までの間に順次設定されている。地域によって1〜2か月のずれがあるため、複数県にまたがって人を雇っている場合は県ごとの発効日を押さえておきたい。</p>
+<p>パート・アルバイトだけでなく、月給者も時間換算で下回っていないかの確認が必要になる。発効前に賃金台帳を一度見直しておくと安心だ。</p>
+<p class="src">出典: <a href="https://www.hrc-j.com/column/29072/" target="_blank" rel="noopener">HRCソリューション「2026年度最低賃金1,177円｜中小企業の賃金改定実務」</a></p>
+</div>
+</details>
+
+<div class="section-h"><span class="ico">🎪</span><h2>展示会・イベント情報</h2><span class="note">参加無料</span></div>
+
+<details>
+<summary>国際物流総合展2026、9月8〜11日に東京ビッグサイトで<span class="tag">展示会</span><span class="toggle"></span></summary>
+<div class="body">
+<p>「第17回 国際物流総合展 2026」が2026年9月8日（火）〜11日（金）10:00〜17:00、東京ビッグサイトで開催される。600社・団体／3,250ブースと過去最大規模での開催予定。</p>
+<p>テーマは「知恵と技術で、物流の未来を切り拓く。」。搬送・仕分け・保管の自動化機器やシステムが一堂に集まる。入場料3,000円、来場事前登録者は無料。</p>
+<p>省人化・自動化設備をまとめて比較できる数少ない機会。省力化投資補助金の対象設備の下見にも向く。</p>
+<p class="src">出典: <a href="https://www.logis-tech-tokyo.gr.jp/ltt/overview/" target="_blank" rel="noopener">第17回 国際物流総合展 2026「展示会概要」</a></p>
+</div>
+</details>
+
+<div class="section-h"><span class="ico">💰</span><h2>お客様が使える補助金・助成金</h2><span class="note">自治体ごとに異なります</span></div>
+
+<details>
+<summary>デジタル化・AI導入補助金2026、通常枠の次回締切は9月29日<span class="tag">補助金</span><span class="toggle"></span></summary>
+<div class="body">
+<p>旧IT導入補助金から名称が変わった「デジタル化・AI導入補助金2026」は、2026年3月30日から募集が始まっている。通常枠の締切のひとつが2026年9月29日（火）17:00、交付決定日は同年11月9日（月）予定とされている。</p>
+<p>ソフトウェアの導入費用に加え、関連するハードウェアや導入支援費が対象になる枠もある。申請には、登録されたIT導入支援事業者との連携が必要になる。</p>
+<p>複数社連携デジタル化・AI導入枠は通常枠と別スケジュールになる。締切回次と受付状況は公式サイトで要確認。</p>
+<p class="src">出典: <a href="https://it-shien.smrj.go.jp/schedule/" target="_blank" rel="noopener">中小機構「事業スケジュール｜デジタル化・AI導入補助金2026」</a></p>
+</div>
+</details>
+<div class="strong">
+<h3>💡 株式会社たろうの強み視点</h3>
+<p>ランサム被害の6割超が中小企業、という警察庁の数字は「規模に関係なく狙われている」ということを示しています。とはいえ、社内に情報システム担当がいない会社で、VPN機器のファームウェア更新やバックアップの復旧テストまで手が回るかというと、なかなか難しいのが実情です。株式会社たろうは、愛知県を中心に「パソコンで困った」を電話一本ですぐ解決する“解決やさん”として、最高のフットワークでお伺いしています。ウイルス・ランサムウェア対策から、ルーターやVPN機器の設定確認、バックアップの取り方、いざというときの復旧まで、まとめてご相談いただけます。「これ、うちは大丈夫でしょうか」の一言からで結構です。</p>
+</div>
+
+<div class="memo">
+<h3>📝 今週のひとことメモ</h3>
+<p>5年連続でランサムが1位、しかも被害の6割超が中小企業。数字を見るかぎり、対策の有無がそのまま結果に出ています。まずはバックアップから戻せるかを一度試してみる。そこが最初の一歩です。</p>
+</div>
+
+</main>
+<footer>
+株式会社たろう ウィークリー・セキュリティ情報 ｜ 週刊 業界情報ダイジェスト<br>
+※他社記事・写真は転載せず、要点を要約し出典リンクで掲載しています。各情報は出典元をご確認ください。
+</footer>
+</div>
+</body>
+</html>
