@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="愛知県中心のネットワークセキュリティ／PCサポート「株式会社たろう」がお届けする週刊セキュリティ情報（2026年9月14日号）。脅威動向・制度・イベント・補助金をまとめています。">
+<title>株式会社たろう ウィークリー・セキュリティ情報</title>
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "LocalBusiness", "name": "株式会社たろう", "url": "https://news.kagi.work/", "description": "愛知県を中心に活動する、中小企業・個人向けのネットワークセキュリティ／IT・パソコンサポート会社。ネットセキュリティやパソコン全般の相談に最高のフットワークで対応し、『パソコンで困った』を電話一本ですぐ解決する“解決やさん”。ウイルス・ランサムウェア対策、ネットワーク設定、トラブル復旧、機器導入をワンストップで支援する。", "areaServed": [ {"@type": "State","name": "愛知県"}, {"@type": "City","name": "名古屋市"} ], "knowsAbout": ["ネットワークセキュリティ","ランサムウェア対策","ウイルス対策","パソコン修理","IT相談","ネットワーク構築","データ復旧・バックアップ","サポート詐欺対策"], "address": {"@type": "PostalAddress","addressRegion": "愛知県","addressCountry": "JP"} }
+</script>
+<style>
+:root{ --navy:#0e6e8a; --navy2:#1596b4; --brass:#f39c12; --brass-dk:#c87f0a; --ink:#20262c; --muted:#6b7580; --line:#e4e7ea; --tint:#eaf5f8; --link:#0e6e8a; --memo-bg:#eaf5f8; --memo-bd:#0e6e8a; --strong-bg:#fdf3e0; --strong-bd:#f39c12; }
+*{box-sizing:border-box;}
+body{margin:0; color:var(--ink); background:#f4f6f8; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",system-ui,sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased;}
+.wrap{max-width:820px; margin:0 auto; background:#fff;}
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%); color:#fff; padding:34px 32px 30px;}
+header .title{display:flex; align-items:center; gap:14px; margin:0; font-size:31px; font-weight:800; letter-spacing:.02em;}
+header .title .ico{font-size:34px; line-height:1;}
+header .sub{margin:12px 0 0; font-size:15px; color:#e3e8ee; font-weight:400;}
+header .sub .date{color:#fff; font-weight:600;}
+main{padding:28px 32px 8px;}
+.section-h{display:flex; align-items:baseline; gap:12px; border-left:5px solid var(--navy); padding-left:12px; margin:30px 0 14px;}
+.section-h .ico{font-size:22px;}
+.section-h h2{margin:0; font-size:21px; font-weight:800; color:var(--navy);}
+.section-h .note{font-size:13px; color:var(--muted);}
+.section-h.key{border-left-color:var(--brass);}
+.section-h.key h2{color:var(--brass-dk);}
+.section-h.key .badge{font-size:11px; font-weight:800; color:#fff; background:var(--brass); border-radius:5px; padding:2px 8px; margin-left:2px;}
+details{border:1px solid var(--line); border-radius:12px; background:#fff; margin:0 0 14px; overflow:hidden; box-shadow:0 1px 2px rgba(15,43,70,.04);}
+details[open]{background:var(--tint);}
+summary{list-style:none; cursor:pointer; padding:16px 18px; display:flex; align-items:flex-start; gap:10px; font-size:16.5px; font-weight:700; color:var(--ink);}
+summary::-webkit-details-marker{display:none;}
+summary .toggle{margin-left:auto; color:var(--brass-dk); font-size:22px; font-weight:700; line-height:1; flex:none;}
+details[open] summary .toggle::after{content:"\2013";}
+details:not([open]) summary .toggle::after{content:"+";}
+.tag{display:inline-block; font-size:12px; font-weight:700; color:var(--navy2); background:#e6eaee; border-radius:6px; padding:3px 9px; margin-left:6px; vertical-align:2px; flex:none;}
+.body{padding:2px 18px 18px; border-top:1px dashed var(--line); margin-top:-2px;}
+.body p{margin:12px 0 8px; font-size:15px;}
+.src{font-size:13.5px;}
+.src a{color:var(--link); text-decoration:none; border-bottom:1px solid rgba(55,90,122,.35);}
+.term{font-size:13px; color:var(--muted); background:#f2f5f8; border-radius:6px; padding:8px 12px; margin:10px 0 0;}
+.term b{color:var(--navy2);}
+.strong{background:var(--strong-bg); border-left:5px solid var(--strong-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.strong h3{margin:0 0 6px; font-size:16px; color:var(--brass-dk);}
+.strong p{margin:0; font-size:15px;}
+.memo{background:var(--memo-bg); border-left:5px solid var(--memo-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.memo h3{margin:0 0 6px; font-size:16px; color:var(--memo-bd);}
+.memo p{margin:0; font-size:15px;}
+footer{margin-top:26px; padding:18px 32px 26px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted); text-align:center;}
+a{color:var(--link);}
+@media print{ body{background:#fff;} .wrap{max-width:none;} details{break-inside:avoid; box-shadow:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1 class="title"><span class="ico">🛡️</span>株式会社たろう ウィークリー・セキュリティ情報</h1>
+<p class="sub"><span class="date">2026年9月14日（月）</span> ｜ ネットワークセキュリティ・パソコンサポート 週刊まとめ</p>
+</header>
+<main>
+
+<div class="section-h"><span class="ico">🗞️</span><h2>業界ニュース</h2><span class="note">全国</span></div>
+
+<details open>
+<summary>9月の月例パッチは約970件、悪用確認済みのゼロデイ2件　IPAが緊急の注意喚起<span class="tag">脅威</span><span class="toggle"></span></summary>
+<div class="body">
+<p>マイクロソフトは9月8日（米国時間）、9月の月例セキュリティ更新プログラムを公開しました。修正された脆弱性は970件超と過去最大級の規模で、このうち2件は更新公開前から攻撃に悪用されていたことが確認されています。IPA（情報処理推進機構）は翌9日に注意喚起を出し、速やかな適用を求めています。</p>
+<p>悪用が確認されたのは、Windowsのプロセス間通信（ALPC）に関する権限昇格の脆弱性と、Windows Updateの仕組み自体に潜む権限昇格の脆弱性です。いずれも侵入後に管理者権限を奪う足がかりになるタイプで、他の攻撃と組み合わせて被害を広げる恐れがあります。</p>
+<p>個人のパソコンはWindows Updateを実行して再起動するだけで対処できます。会社で更新を止めている端末や、サーバー・NAS・共有PCなど「再起動しにくい機器」ほど後回しになりがちなので、今週中に適用状況を棚卸ししておきましょう。</p>
+<p class="src">出典: <a href="https://news.mynavi.jp/techplus/article/20260911-4945560/" target="_blank" rel="noopener">マイナビニュース「Microsoft、974件の脆弱性を修正 - 悪用確認済み2件、IPAが緊急の注意喚起」</a></p>
+<p class="term"><b>ゼロデイ脆弱性</b>＝修正プログラムが出る前から攻撃に使われている欠陥。公開と同時に攻撃が加速するため、更新の遅れがそのままリスクになる。</p>
+</div>
+</details>
+
+<details>
+<summary>サポート詐欺の相談が四半期で1,428件、全体の37％に急増（IPA 4〜6月期）<span class="tag">脅威</span><span class="toggle"></span></summary>
+<div class="body">
+<p>IPAの「情報セキュリティ安心相談窓口」に寄せられた2026年第2四半期（4〜6月）の相談3,832件のうち、偽のセキュリティ警告で電話をかけさせる「サポート詐欺」が1,428件で最多となりました。前四半期から約24％増え、相談全体の37.3％を占めています。</p>
+<p>手口は、ブラウザに本物そっくりの警告画面と警告音を表示し、記載の番号に電話させて遠隔操作ソフトを入れさせ、有償サポート契約や電子マネー購入へ誘導する流れです。近年はネットバンキングを直接操作させて数百万〜数千万円を送金させる被害も報告されており、個人だけでなく従業員が業務PCで踏んでしまう企業側の相談も増えています。</p>
+<p>画面が固まっても、表示された番号には絶対に電話しないことが第一です。ブラウザを強制終了（Escキー長押しやタスクマネージャー）すれば警告は消えます。会社では「怪しい警告は自分で対処せず、決まった連絡先に電話する」というルールを徹底しておくだけで被害を大きく減らせます。</p>
+<p class="src">出典: <a href="https://www.ipa.go.jp/security/support/reports/2026q2outline.html" target="_blank" rel="noopener">IPA「サイバーセキュリティ相談窓口の相談状況［2026年第2四半期（4月～6月）］」</a></p>
+</div>
+</details>
+
+<details>
+<summary>Windows 10の無償ESUは2027年10月まで再延長、ただし「延命」に頼らない移行計画を<span class="tag">動向</span><span class="toggle"></span></summary>
+<div class="body">
+<p>2025年10月にサポートが終了したWindows 10について、マイクロソフトは個人向けの拡張セキュリティ更新（ESU）を2027年10月12日まで1年延長しています。当初は2026年10月13日までの予定でしたが、6月に再延長が発表され、登録済みの端末は自動的に保護期間が延びました。</p>
+<p>ESUに登録するには、Microsoftアカウントでサインインして設定を同期する、Rewardsポイントを使う、または有償で購入するといった方法があります。一方、法人向けのESUは有償で年ごとに料金が上がる仕組みのため、企業の場合は「延命費用」と「買い替え費用」を比較して判断する局面が近づいています。</p>
+<p>ESUはあくまでセキュリティ更新のみで、新機能や不具合修正、周辺機器の対応は保証されません。2027年10月の期限まで残り約1年と考え、業務ソフトやプリンターの互換性確認を含めたWindows 11への移行計画を今年度中に立てておくことをおすすめします。</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/articles/2606/26/news061.html" target="_blank" rel="noopener">ITmedia NEWS「「Windows 10」の無料サポート延長プログラム、2027年10月12日まで1年間再延期」</a></p>
+</div>
+</details>
+
+<div class="section-h key"><span class="ico">⚠️</span><h2>制度・法改正ウォッチ</h2><span class="badge">重点</span><span class="note">要チェック</span></div>
+
+<details>
+<summary>10月1日施行：サイバー対処能力強化法（能動的サイバー防御）、中小企業に求められる備え<span class="tag">制度</span><span class="toggle"></span></summary>
+<div class="body">
+<p>2025年5月に公布された「サイバー対処能力強化法」と関連整備法が、2026年10月1日に施行されます。国が攻撃の兆候を早期に把握し、被害が社会に広がる前に対処する「能動的サイバー防御」を実施するための法的な枠組みで、日本のサイバー政策が受動的な防御から能動的な防御へ転換する節目です。</p>
+<p>直接の義務が課されるのは電力・通信・金融などの基幹インフラ事業者で、重要な電子計算機の届出、インシデントの報告、官民協議会への参加などが求められます。一方、中小企業に新たな義務はありませんが、大手の取引先から「サプライチェーンの一員」としてインシデント時の連絡体制や基本的な対策の実施状況を確認される場面が増える見通しです。</p>
+<p>「うちは対象外」で済ませず、①被害に気づいたときの連絡先と報告の流れ、②バックアップとログの保存、③VPN機器やルーターの更新状況、の3点を書面にしておくと、取引先からの問い合わせにもすぐ答えられます。</p>
+<p class="src">出典: <a href="https://www.trendmicro.com/ja_jp/jp-security/26/h/securitytrend-20260814-01.html" target="_blank" rel="noopener">トレンドマイクロ「「能動的サイバー防御」で組織は何に備えるべきか～2026年10月1日施行。セキュリティ責任者が押さえるべき論点と実務対応を解説～」</a></p>
+</div>
+</details>
+
+<div class="section-h"><span class="ico">🎪</span><h2>展示会・イベント情報</h2><span class="note">参加無料</span></div>
+
+<details>
+<summary>Security Days Fall 2026 名古屋　10月28日（水）〜29日（木）JPタワー名古屋、事前登録制・無料<span class="tag">展示会</span><span class="toggle"></span></summary>
+<div class="body">
+<p>サイバーセキュリティ専門の展示会＆セミナー「Security Days Fall 2026」が、2026年10月28日（水）〜29日（木）にJPタワー名古屋 ホール＆カンファレンス（KITTE 3階）で開催されます。今秋は札幌・東京・名古屋・大阪・福岡の5都市開催で、来場は公式サイトからの事前登録制・無料です。</p>
+<p>各会場ではセキュリティの専門家が多数登壇し、標的型攻撃やランサムウェア、クラウドセキュリティ、情報漏えい対策、AIセキュリティなど、巧妙化する攻撃の動向と対策を共有します。名古屋会場では例年どおり、自動車産業向けのサイバーセキュリティをテーマにした講演も予定されています。</p>
+<p>名古屋駅直結で半日から参加できるため、中小企業の経営者や情シス兼務の担当者が最新動向をまとめて把握する場として最適です。展示ブースではUTMやEDR、バックアップ製品を直接比較できるので、更新時期を迎えた機器がある会社は導入検討を兼ねて来場するとよいでしょう。</p>
+<p class="src">出典: <a href="https://nanooptmedia.jp/news/news-2075/" target="_blank" rel="noopener">ナノオプト・メディア「【Security Days Fall 2026 札幌/東京/名古屋/大阪/福岡】来場登録受付を開始しました。」</a></p>
+</div>
+</details>
+
+<div class="section-h"><span class="ico">💰</span><h2>お客様が使える補助金・助成金</h2><span class="note">自治体ごとに異なります</span></div>
+
+<details>
+<summary>愛知県「セキュリティ教育伴走支援プログラム」追加募集：無料・5社程度、9月25日（金）17時締切<span class="tag">支援</span><span class="toggle"></span></summary>
+<div class="body">
+<p>愛知県は9月7日、中小企業のサイバーセキュリティ対策支援事業の一環として「セキュリティ教育伴走支援プログラム」の追加募集を開始しました。県内に本社または営業所を持つ中小企業が対象で、費用は無料、募集は5社程度、申込締切は2026年9月25日（金）午後5時です。</p>
+<p>内容は、専門家によるヒアリングで課題とゴールを設定したうえで、eラーニングや集合研修、標的型攻撃メール訓練を実施し、開封率・報告率の中間分析と3か月後の振り返りまで伴走するというものです。支援期間は選定後の2026年10月ごろから約3か月で、応募には無料の「あいち産業DX推進コンソーシアム」への会員登録が必要です（情報通信業・コンサルティング業・金融業は対象外）。</p>
+<p>設備を買う補助金ではなく「人の対策」を無料で底上げできる珍しい機会です。応募多数の場合は選定となり、結果は9月末にメール通知される予定なので、関心がある企業は締切前に早めに申し込んでください。あわせて県の中小企業デジタル化・DX促進補助金は今年度の公募を終了しているため、次年度の再開に備えた情報収集も有効です。</p>
+<p class="src">出典: <a href="https://www.pref.aichi.jp/site/aichi-pref-iot/security-shienn2-2026.html" target="_blank" rel="noopener">愛知県「【追加募集】中小企業のための「セキュリティ教育伴走支援プログラム」に参加する企業を募集します！」</a></p>
+</div>
+</details>
+<div class="strong">
+<h3>💡 株式会社たろうの強み視点</h3>
+<p>今週は「過去最大級の月例パッチ」「サポート詐欺の急増」「Windows 10延命の期限」と、放っておくと後で高くつく話題が重なりました。株式会社たろうは愛知県を中心に、中小企業や個人の「パソコンで困った」を電話一本ですぐ解決する“解決やさん”として、ウイルス・ランサムウェア対策、更新プログラムの適用確認、ネットワーク機器の設定、データのバックアップ・復旧、Windows 11への移行まで、最高のフットワークでワンストップに対応します。偽の警告画面が出て動けなくなった、更新をかけたら業務ソフトが動かない、といった突発トラブルも、まずはご相談ください。</p>
+</div>
+
+<div class="memo">
+<h3>📝 今週のひとことメモ</h3>
+<p>970件超という月例パッチの規模は、攻撃者の側もそれだけ多くの「入口」を探していることの裏返しです。技術的な対策と同じくらい大切なのが、サポート詐欺のように人の判断を狙う手口への備えで、愛知県の無料の教育伴走プログラムはその第一歩に使えます。10月には能動的サイバー防御の法律も動き出し、中小企業も取引先から対策状況を問われる時代に入ります。「更新する・電話しない・バックアップを取る」の基本を、今週あらためて社内で確認してみてください。</p>
+</div>
+
+</main>
+<footer>
+株式会社たろう ウィークリー・セキュリティ情報 ｜ 週刊 業界情報ダイジェスト<br>
+※他社記事・写真は転載せず、要点を要約し出典リンクで掲載しています。各情報は出典元をご確認ください。
+</footer>
+</div>
+</body>
+</html>
