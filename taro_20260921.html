@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="愛知県中心のネットワークセキュリティ／PCサポート「株式会社たろう」がお届けする週刊セキュリティ情報（2026年9月21日号）。脅威動向・制度・イベント・補助金をまとめています。">
+<title>株式会社たろう ウィークリー・セキュリティ情報</title>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "株式会社たろう", "url": "https://news.kagi.work/", "description": "愛知県を中心に活動する、中小企業・個人向けのネットワークセキュリティ／IT・パソコンサポート会社。ネットセキュリティやパソコン全般の相談に最高のフットワークで対応し、『パソコンで困った』を電話一本ですぐ解決する“解決やさん”。ウイルス・ランサムウェア対策、ネットワーク設定、トラブル復旧、機器導入をワンストップで支援する。", "areaServed": [{"@type": "State", "name": "愛知県"}, {"@type": "City", "name": "名古屋市"}], "knowsAbout": ["ネットワークセキュリティ", "ランサムウェア対策", "ウイルス対策", "パソコン修理", "IT相談", "ネットワーク構築", "データ復旧・バックアップ", "サポート詐欺対策"], "address": {"@type": "PostalAddress", "addressRegion": "愛知県", "addressCountry": "JP"}}
+</script>
+<style>
+:root{ --navy:#0e6e8a; --navy2:#1596b4; --brass:#f39c12; --brass-dk:#c87f0a; --ink:#20262c; --muted:#6b7580; --line:#e4e7ea; --tint:#eef1f4; --link:#375a7a; --memo-bg:#eaf5f8; --memo-bd:#0e6e8a; --strong-bg:#fdf3e0; --strong-bd:#f39c12; }
+*{box-sizing:border-box;}
+body{margin:0; color:var(--ink); background:#f4f6f8; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",system-ui,sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased;}
+.wrap{max-width:820px; margin:0 auto; background:#fff;}
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%); color:#fff; padding:34px 32px 30px;}
+header .title{display:flex; align-items:center; gap:14px; margin:0; font-size:31px; font-weight:800; letter-spacing:.02em;}
+header .title .ico{font-size:34px; line-height:1;}
+header .sub{margin:12px 0 0; font-size:15px; color:#e3e8ee; font-weight:400;}
+header .sub .date{color:#fff; font-weight:600;}
+main{padding:28px 32px 8px;}
+.section-h{display:flex; align-items:baseline; gap:12px; border-left:5px solid var(--navy); padding-left:12px; margin:30px 0 14px;}
+.section-h .ico{font-size:22px;}
+.section-h h2{margin:0; font-size:21px; font-weight:800; color:var(--navy);}
+.section-h .note{font-size:13px; color:var(--muted);}
+.section-h.key{border-left-color:var(--brass);}
+.section-h.key h2{color:var(--brass-dk);}
+.section-h.key .badge{font-size:11px; font-weight:800; color:#fff; background:var(--brass); border-radius:5px; padding:2px 8px; margin-left:2px;}
+details{border:1px solid var(--line); border-radius:12px; background:#fff; margin:0 0 14px; overflow:hidden; box-shadow:0 1px 2px rgba(15,43,70,.04);}
+details[open]{background:var(--tint);}
+summary{list-style:none; cursor:pointer; padding:16px 18px; display:flex; align-items:flex-start; gap:10px; font-size:16.5px; font-weight:700; color:var(--ink);}
+summary::-webkit-details-marker{display:none;}
+summary .toggle{margin-left:auto; color:var(--brass-dk); font-size:22px; font-weight:700; line-height:1; flex:none;}
+summary .ttl{flex:1 1 auto; min-width:0;}
+details[open] summary .toggle::after{content:"\2013";}
+details:not([open]) summary .toggle::after{content:"+";}
+.tag{display:inline-block; font-size:12px; font-weight:700; color:var(--navy2); background:#e6eaee; border-radius:6px; padding:3px 9px; margin-left:6px; vertical-align:2px; flex:none;}
+.body{padding:2px 18px 18px; border-top:1px dashed var(--line); margin-top:-2px;}
+.body p{margin:12px 0 8px; font-size:15px;}
+.src{font-size:13.5px;}
+.src a{color:var(--link); text-decoration:none; border-bottom:1px solid rgba(55,90,122,.35);}
+.term{font-size:13px; color:var(--muted); background:#f2f5f8; border-radius:6px; padding:8px 12px; margin:10px 0 0;}
+.term b{color:var(--navy2);}
+.strong{background:var(--strong-bg); border-left:5px solid var(--strong-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.strong h3{margin:0 0 6px; font-size:16px; color:var(--brass-dk);}
+.strong p{margin:0; font-size:15px;}
+.memo{background:var(--memo-bg); border-left:5px solid var(--memo-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.memo h3{margin:0 0 6px; font-size:16px; color:var(--memo-bd);}
+.memo p{margin:0; font-size:15px;}
+footer{margin-top:26px; padding:18px 32px 26px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted); text-align:center;}
+a{color:var(--link);}
+@media print{ body{background:#fff;} .wrap{max-width:none;} details{break-inside:avoid; box-shadow:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1 class="title"><span class="ico">🛡️</span>株式会社たろう ウィークリー・セキュリティ情報</h1>
+<p class="sub"><span class="date">2026年9月21日（月）</span> ｜ ネットワークセキュリティ・パソコンサポート 週刊まとめ</p>
+</header>
+<main>
+
+
+<div class="section-h"><span class="ico">🗞️</span><h2>業界ニュース</h2><span class="note">全国</span></div>
+
+<details open="">
+<summary><span class="ttl">警察庁「上半期のランサムウェア被害は<b>123件</b>で過去最多」、中小企業が79件・侵入経路の約5割はVPN機器（9月10日公表）</span><span class="tag">脅威</span><span class="toggle"></span></summary>
+<div class="body">
+<p>警察庁は9月10日、2026年上半期のサイバー空間をめぐる脅威の情勢を公表しました。国内のランサムウェア被害報告は123件で、統計を始めた2020年下半期以降、半期として過去最多です。企業規模別では中小企業が79件、大企業が31件、団体などが13件で、業種別では製造業37件、卸売・小売業15件が上位でした。</p>
+<p>被害組織への調査では、侵入経路の約5割がVPN機器でした。復旧に総額1,000万円以上かかった組織が6割、1カ月未満で復旧できた組織は5割弱にとどまり、被害が長期化・高額化しています。警察庁が検知した脆弱性探索などの不審アクセスも1日・1IPアドレスあたり1万3,687件と前年同期比50.7％増でした。</p>
+<p>被害の6割超が中小企業という現実は、「うちは狙われない」が通用しないことを示しています。まずは社内で使っているVPN機器やルーターの型番を把握し、メーカーの修正プログラムを適用できているかを確認しましょう。バックアップを別の場所に保管し、復旧手順を紙で持っておくだけでも、被害時の停止期間を大きく縮められます。</p>
+<p class="src">出典: <a href="https://atmarkit.itmedia.co.jp/ait/articles/2609/17/news010.html" target="_blank" rel="noopener">＠IT「ランサムウェア被害は過去最多 警察庁が明かした2026年上半期の異変」</a> ／ <a href="https://www.npa.go.jp/news/release/2026/20260909001.html" target="_blank" rel="noopener">警察庁「令和８年上半期におけるサイバー空間をめぐる脅威の情勢等について」</a></p>
+<p class="term"><b>ランサムウェア</b>＝データを暗号化して使えなくし、復号や公開停止と引き換えに金銭を要求する不正プログラム。最近はデータを盗んだうえで公開すると脅す手口も増えています。</p>
+</div>
+</details>
+<details>
+<summary><span class="ttl">デジタル庁の政府共通基盤GSSに不正アクセス、VPNの脆弱性から侵入され職員ら<b>約24.6万件</b>の個人情報が漏えいの可能性（9月11日発表）</span><span class="tag">脅威</span><span class="toggle"></span></summary>
+<div class="body">
+<p>デジタル庁は9月11日、各府省庁が利用する業務基盤「ガバメントソリューションサービス（GSS）」が外部から不正アクセスを受け、職員や関係事業者の個人情報約24.6万件が漏えいした可能性があると発表しました。6月25日に保守運用担当者のアカウントによる大量ファイルアクセスを検知し、7月9日にVPN機器の脆弱性を突いた侵入が判明したとのことです。</p>
+<p>漏えいの可能性がある情報は氏名、メールアドレス、電話番号などで、マイナンバーや口座情報は含まれていないとされています。GSSはゼロトラストの考え方を取り入れた基盤でしたが、接続機器の脆弱性と保守用アカウントの悪用という組み合わせで突破された形です。同庁は脆弱性管理と外部接続の方法を見直すとしています。</p>
+<p>政府の共通基盤でさえVPN機器が入口になったという事実は、中小企業にとっても他人事ではありません。保守業者や外部委託先に渡しているアカウントの棚卸し、使っていないアカウントの停止、多要素認証の導入を進めましょう。今回の情報を悪用した「情報漏えい確認」を装う偽メールやSMSにも注意が必要です。</p>
+<p class="src">出典: <a href="https://atmarkit.itmedia.co.jp/ait/articles/2609/14/news038.html" target="_blank" rel="noopener">＠IT「「ゼロトラスト」でも防げず？ 政府共通基盤GSSで24.6万件が漏えいか」</a> ／ <a href="https://www.digital.go.jp/news/2026-0911-01" target="_blank" rel="noopener">デジタル庁「ガバメントソリューションサービスへの不正アクセスによる職員等の個人情報の漏えいの可能性について」</a></p>
+</div>
+</details>
+<details>
+<summary><span class="ttl">Adobe AcrobatとReaderに<b>緊急</b>の脆弱性、IPAとJPCERT/CCが9月9日に注意喚起、PDF閲覧ソフトの更新を</span><span class="tag">脅威</span><span class="toggle"></span></summary>
+<div class="body">
+<p>アドビは9月9日、Adobe AcrobatおよびAcrobat Readerのセキュリティアップデート（APSB26-141）を公開し、IPAは同日「緊急」の注意喚起を、JPCERT/CCも注意喚起を出しました。対象はWindows版・macOS版のAcrobat／Reader Continuous 26.002.21900以前と、Acrobat 2024 Classic 24.001.30383以前で、細工されたPDFを開くと任意のコードを実行されるおそれがあります。</p>
+<p>報道によると今回の修正は32件の脆弱性を含み、うち21件が深刻度「Critical」とされています。同じ週にはマイクロソフトの9月の月例更新でも悪用が確認された脆弱性が2件公表されており、業務PCに入っている基本ソフトの更新を一斉に確認するタイミングと言えます。</p>
+<p>PDF閲覧ソフトは見積書や請求書のやり取りで毎日使うため、標的型メールの入口になりやすい部分です。Acrobat Readerの自動更新が有効か、古いバージョンが残ったPCがないかを確認しましょう。更新作業を各社員任せにせず、担当者が一覧で管理する仕組みを持つことが、小さな会社ほど効果的です。</p>
+<p class="src">出典: <a href="https://www.ipa.go.jp/security/security-alert/2026/0909-adobereader.html" target="_blank" rel="noopener">IPA「Adobe Acrobat および Reader の脆弱性対策について(2026年9月)」</a> ／ <a href="https://scan.netsecurity.ne.jp/article/2026/09/11/56201.html" target="_blank" rel="noopener">ScanNetSecurity「Adobe Acrobat および Reader に脆弱性」</a></p>
+</div>
+</details>
+
+<div class="section-h key"><span class="ico">⚠️</span><h2>制度・法改正ウォッチ</h2><span class="badge">重点</span><span class="note">要チェック</span></div>
+
+<details>
+<summary><span class="ttl">経産省「サプライチェーン強化に向けたセキュリティ対策評価制度」が2026年度下期に運用開始予定、<b>★3</b>が基礎水準に</span><span class="tag">制度</span><span class="toggle"></span></summary>
+<div class="body">
+<p>経済産業省が整備を進める「サプライチェーン強化に向けたセキュリティ対策評価制度」（通称SCS評価制度）は、企業のセキュリティ対策の実施状況を★3・★4・★5の3段階で見える化する仕組みです。2026年度下期（10月〜3月）からまず★3と★4の運用を始め、★5の開始時期は今後検討される計画とされています（開始日は要確認）。</p>
+<p>背景には、大企業が取引先ごとに独自のチェックシートを送って対策状況を確認する負担が、回答する側にも確認する側にも重くなっている実情があります。共通の評価基準ができれば、中小企業は一度の対応で複数の取引先に自社の水準を示せるようになり、逆に基準を満たさない場合は取引条件に影響する可能性もあります。</p>
+<p>愛知県には自動車や機械など大手のサプライチェーンに連なる中小企業が多く、この制度の影響は大きいと考えられます。★3は基礎的な対策水準とされているため、IPAの「SECURITY ACTION」自己宣言や情報セキュリティ5か条の実践から始め、取引先から求められる前に対策状況を説明できる状態にしておくことが現実的な準備です。</p>
+<p class="src">出典: <a href="https://toyokeizai.net/articles/-/924107?display=b" target="_blank" rel="noopener">東洋経済オンライン「｢★3｣が最低限の基礎水準､2026年度スタート&quot;サプライチェーン強化に向けたセキュリティ対策評価制度&quot;」</a> ／ <a href="https://www.trendmicro.com/ja_jp/jp-security/26/b/securitytrend-20260205-01.html" target="_blank" rel="noopener">トレンドマイクロ「経済産業省「サプライチェーン強化に向けたセキュリティ対策評価制度」とは？」</a></p>
+<p class="term"><b>SECURITY ACTION</b>＝中小企業が情報セキュリティ対策に取り組むことを自己宣言するIPAの制度。IT導入補助金などの申請要件にもなっています。</p>
+</div>
+</details>
+
+<div class="section-h"><span class="ico">🎪</span><h2>展示会・イベント情報</h2><span class="note">参加無料</span></div>
+
+<details>
+<summary><span class="ttl">11月11〜13日「メッセナゴヤ2026」ポートメッセなごやで開催、IT・DX分野の出展も集まる異業種交流展示会</span><span class="tag">展示会</span><span class="toggle"></span></summary>
+<div class="body">
+<p>日本最大級の異業種交流展示会「メッセナゴヤ2026」が2026年11月11日（水）〜13日（金）、ポートメッセなごや第1展示館（名古屋市港区金城ふ頭）で開催されます。2006年から続く名古屋の恒例行事で、製造業からIT、サービス業まで幅広い業種が出展します。今年のキャッチコピーは「Next Era 熱量が未来を動かす」です。</p>
+<p>会場にはDXツールやクラウドサービス、業務効率化、セキュリティ関連の出展も並ぶ見込みで、名古屋商工会議所は出展検討向けの個別相談会も実施しています。来場登録や出展枠、セミナーの詳細は公式サイトで随時更新されるため、最新情報の確認が必要です（要確認）。</p>
+<p>中小企業の経営者や情報システム担当者にとっては、複数のセキュリティ製品やPCサポートサービスを一度に比較できる機会です。展示会で聞いた話をそのまま導入するのではなく、自社の規模や使い方に合うかを相談できる地元のIT事業者を持っておくと、判断の失敗を減らせます。</p>
+<p class="src">出典: <a href="https://www.messenagoya.jp/about" target="_blank" rel="noopener">メッセナゴヤ2026「展示会概要」</a> ／ <a href="https://www.nagoya-cci.or.jp/event/event-detail-2026_3.html" target="_blank" rel="noopener">名古屋商工会議所「メッセナゴヤ2026 出展検討のための個別相談会」</a></p>
+</div>
+</details>
+
+<div class="section-h"><span class="ico">💰</span><h2>お客様が使える補助金・助成金</h2><span class="note">自治体ごとに異なります</span></div>
+
+<details>
+<summary><span class="ttl">デジタル化・AI導入補助金2026「セキュリティ対策推進枠」5次締切は<b>9月29日17時</b>、交付決定は11月9日予定</span><span class="tag">支援</span><span class="toggle"></span></summary>
+<div class="body">
+<p>旧IT導入補助金にあたる「デジタル化・AI導入補助金2026」のうち、セキュリティ対策推進枠の5次締切は2026年9月29日（火）17時で、交付決定は11月9日（月）の予定です。事業実施期間は交付決定から2027年4月30日までとされています。通常枠やインボイス枠も同じ9月29日が5次締切です。</p>
+<p>セキュリティ対策推進枠は、IPAの「サイバーセキュリティお助け隊サービス」に登録されたサービスの利用料が対象で、中小企業がサイバー攻撃対策を導入する際の費用を補助する仕組みです。申請はIT導入支援事業者と共同で行い、gBizIDプライムの取得やSECURITY ACTIONの宣言が事前に必要になります。6次以降のスケジュールは事務局が随時更新するとしています（6次締切は要確認）。</p>
+<p>締切直前は申請マイページへのアクセスが集中し、SMS認証などに時間がかかると事務局も注意を促しています。9月29日に間に合わない場合でも、gBizIDの取得や自社の対策状況の棚卸しを進めておけば次回募集にすぐ動けます。警察庁の統計でも復旧費用の高額化が示されており、補助金を使った予防投資の費用対効果は高まっています。</p>
+<p class="src">出典: <a href="https://it-shien.smrj.go.jp/schedule/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026「事業スケジュール」</a> ／ <a href="https://it-shien.smrj.go.jp/applicant/subsidy/security/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026「セキュリティ対策推進枠」</a></p>
+</div>
+</details>
+
+<div class="strong">
+<h3>💡 株式会社たろうの強み視点</h3>
+<p>今週は、警察庁の統計で上半期のランサムウェア被害が過去最多の123件となり、その6割超が中小企業だったこと、そして政府の共通基盤やホスティング大手までVPN機器の脆弱性から侵入されたことが明らかになりました。共通するのは「入口になる機器やアカウントの管理が追いついていない」という点です。株式会社たろうは、愛知県を中心に「パソコンで困った」を電話一本で解決する“解決やさん”として、VPNやルーターの設定確認、古いパソコンの更新、日常ソフトの更新管理まで、現場に足を運んで対応してきました。最高のフットワークで、被害が出てからではなく「今のうちに確認したい」というご相談にすぐ動けるのが強みです。経産省の評価制度が始まれば、取引先から対策状況の説明を求められる場面も増えます。補助金の活用も含め、御社の規模に合った現実的な対策を一緒に整えます。</p>
+</div>
+
+<div class="memo">
+<h3>📝 今週のひとことメモ</h3>
+<p>今週号は「VPN機器と保守アカウントが狙われている」という一点に尽きます。警察庁の上半期統計では侵入経路の約5割がVPN機器で、デジタル庁のGSSでも同じ経路で約24.6万件の個人情報が漏えいした可能性が示されました。Acrobat Readerの緊急脆弱性やマイクロソフトの月例更新も重なり、9月は「更新漏れの総点検月間」と言える状況です。制度面では経産省のセキュリティ対策評価制度が2026年度下期に始まる見込みで、取引先への説明責任が中小企業にも及びます。9月29日締切のセキュリティ対策推進枠は、その準備を後押しする実務的な選択肢です。</p>
+</div>
+
+
+</main>
+<footer>
+株式会社たろう ウィークリー・セキュリティ情報 ｜ 週刊 業界情報ダイジェスト<br>
+※他社記事・写真は転載せず、要点を要約し出典リンクで掲載しています。各情報は出典元をご確認ください。
+</footer>
+</div>
+</body>
+</html>
