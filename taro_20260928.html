@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="愛知県中心のネットワークセキュリティ／PCサポート「株式会社たろう」がお届けする週刊セキュリティ情報（2026年9月28日号）。脅威動向・制度・イベント・補助金をまとめています。">
+<title>株式会社たろう ウィークリー・セキュリティ情報</title>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "株式会社たろう", "url": "https://news.kagi.work/", "description": "愛知県を中心に活動する、中小企業・個人向けのネットワークセキュリティ／IT・パソコンサポート会社。ネットセキュリティやパソコン全般の相談に最高のフットワークで対応し、『パソコンで困った』を電話一本ですぐ解決する“解決やさん”。ウイルス・ランサムウェア対策、ネットワーク設定、トラブル復旧、機器導入をワンストップで支援する。", "areaServed": [{"@type": "State", "name": "愛知県"}, {"@type": "City", "name": "名古屋市"}], "knowsAbout": ["ネットワークセキュリティ", "ランサムウェア対策", "ウイルス対策", "パソコン修理", "IT相談", "ネットワーク構築", "データ復旧・バックアップ", "サポート詐欺対策"], "address": {"@type": "PostalAddress", "addressRegion": "愛知県", "addressCountry": "JP"}}
+</script>
+<style>
+:root{ --navy:#0e6e8a; --navy2:#1596b4; --brass:#f39c12; --brass-dk:#c87f0a; --ink:#20262c; --muted:#6b7580; --line:#e4e7ea; --tint:#eef1f4; --link:#375a7a; --memo-bg:#eaf5f8; --memo-bd:#0e6e8a; --strong-bg:#fdf3e0; --strong-bd:#f39c12; }
+*{box-sizing:border-box;}
+body{margin:0; color:var(--ink); background:#f4f6f8; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",system-ui,sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased;}
+.wrap{max-width:820px; margin:0 auto; background:#fff;}
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%); color:#fff; padding:34px 32px 30px;}
+header .title{display:flex; align-items:center; gap:14px; margin:0; font-size:31px; font-weight:800; letter-spacing:.02em;}
+header .title .ico{font-size:34px; line-height:1;}
+header .sub{margin:12px 0 0; font-size:15px; color:#e3e8ee; font-weight:400;}
+header .sub .date{color:#fff; font-weight:600;}
+main{padding:28px 32px 8px;}
+.section-h{display:flex; align-items:baseline; gap:12px; border-left:5px solid var(--navy); padding-left:12px; margin:30px 0 14px;}
+.section-h .ico{font-size:22px;}
+.section-h h2{margin:0; font-size:21px; font-weight:800; color:var(--navy);}
+.section-h .note{font-size:13px; color:var(--muted);}
+.section-h.key{border-left-color:var(--brass);}
+.section-h.key h2{color:var(--brass-dk);}
+.section-h.key .badge{font-size:11px; font-weight:800; color:#fff; background:var(--brass); border-radius:5px; padding:2px 8px; margin-left:2px;}
+details{border:1px solid var(--line); border-radius:12px; background:#fff; margin:0 0 14px; overflow:hidden; box-shadow:0 1px 2px rgba(15,43,70,.04);}
+details[open]{background:var(--tint);}
+summary{list-style:none; cursor:pointer; padding:16px 18px; display:flex; align-items:flex-start; gap:10px; font-size:16.5px; font-weight:700; color:var(--ink);}
+summary::-webkit-details-marker{display:none;}
+summary .toggle{margin-left:auto; color:var(--brass-dk); font-size:22px; font-weight:700; line-height:1; flex:none;}
+summary .ttl{flex:1 1 auto; min-width:0;}
+details[open] summary .toggle::after{content:"\2013";}
+details:not([open]) summary .toggle::after{content:"+";}
+.tag{display:inline-block; font-size:12px; font-weight:700; color:var(--navy2); background:#e6eaee; border-radius:6px; padding:3px 9px; margin-left:6px; vertical-align:2px; flex:none;}
+.body{padding:2px 18px 18px; border-top:1px dashed var(--line); margin-top:-2px;}
+.body p{margin:12px 0 8px; font-size:15px;}
+.src{font-size:13.5px;}
+.src a{color:var(--link); text-decoration:none; border-bottom:1px solid rgba(55,90,122,.35);}
+.term{font-size:13px; color:var(--muted); background:#f2f5f8; border-radius:6px; padding:8px 12px; margin:10px 0 0;}
+.term b{color:var(--navy2);}
+.strong{background:var(--strong-bg); border-left:5px solid var(--strong-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.strong h3{margin:0 0 6px; font-size:16px; color:var(--brass-dk);}
+.strong p{margin:0; font-size:15px;}
+.memo{background:var(--memo-bg); border-left:5px solid var(--memo-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.memo h3{margin:0 0 6px; font-size:16px; color:var(--memo-bd);}
+.memo p{margin:0; font-size:15px;}
+footer{margin-top:26px; padding:18px 32px 26px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted); text-align:center;}
+a{color:var(--link);}
+@media print{ body{background:#fff;} .wrap{max-width:none;} details{break-inside:avoid; box-shadow:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1 class="title"><span class="ico">🛡️</span>株式会社たろう ウィークリー・セキュリティ情報</h1>
+<p class="sub"><span class="date">2026年9月28日（月）</span> ｜ ネットワークセキュリティ・パソコンサポート 週刊まとめ</p>
+</header>
+<main>
+
+<div class="section-h"><span class="ico">🗞️</span><h2>業界ニュース</h2><span class="note">全国</span></div>
+
+<details open="">
+<summary><span class="ttl">池上通信機に<b>ランサムウェア「Qilin」</b>被害の疑い、9月21日に調査開始</span><span class="tag">注意喚起</span><span class="toggle"></span></summary>
+<div class="body">
+<p>池上通信機は9月21日、外部からサイバー攻撃の可能性について情報提供を受けたと発表し、社内関係部門と外部専門機関による調査を始めました。9月22日以降、ランサムウェア集団Qilinのリークサイトに同社名が掲載され、約66GB・10万件超のファイル窃取を主張する動きも確認されています。</p>
+<p>リークサイトには「Confidential」と表示された社内資料らしき画像が複数掲載され、予算・計画表やシステム構成図、外部インターフェース仕様書とみられる資料が含まれていました。ただし同社は9月24日時点で攻撃の有無自体を含めて確認中とし、Qilin側の主張の真偽は明らかになっていません。</p>
+<p>取引先とのデータ連携が多い中小企業にとって、他社の被害でも自社の認証情報や取引メールが芋づる式に狙われる可能性があります。多要素認証の導入状況やバックアップの世代管理を、今のうちに一度点検しておくと安心です。</p>
+<p class="src">出典: <a href="https://rocket-boys.co.jp/security-measures-lab/ikegami-qilin-cyberattack-claim-2026-09-24/" target="_blank" rel="noopener">セキュリティ対策Lab「池上通信機がサイバー攻撃を調査 ランサムウェアグループQilinが66GB・10万超ファイル窃取を主張」</a> ／ <a href="https://www.nikkei.com/nkd/disclosure/tdnr/20260924539383/" target="_blank" rel="noopener">日本経済新聞「池上通信機：当社に対するサイバー攻撃の可能性に関するお知らせ」</a></p>
+</div>
+</details>
+
+<details>
+<summary><span class="ttl">フィッシング対策協議会、<b>不可視Unicode文字</b>で検知回避する大規模攻撃キャンペーンを報告</span><span class="tag">注意喚起</span><span class="toggle"></span></summary>
+<div class="body">
+<p>フィッシング対策協議会は9月18日、2026年8月分のフィッシング報告状況をまとめた月次報告書を公開しました。あわせて、目に見えない特殊文字（不可視Unicode文字）を悪用して検知をすり抜ける手口が、1日最大237万件規模の攻撃キャンペーンとしてMicrosoftにより確認されたことも紹介されています。</p>
+<p>この手口は、メールの見た目は正常な文字列でも、内部に不可視文字を混ぜ込むことでセキュリティ製品のパターンマッチングを回避する仕組みです。件名や送信元の表示だけでは異常に気づけないため、フィルタリング側の対応強化が課題になっています。</p>
+<p>「見た目で怪しさを判断する」という従来の注意喚起だけでは通用しにくくなっています。取引先を名乗るメール内のリンクはむやみに開かず、少しでも不審な点があれば電話など別経路で確認する運用を、従業員に改めて周知しておくことをおすすめします。</p>
+<p class="src">出典: <a href="https://www.antiphishing.jp/report/monthly/" target="_blank" rel="noopener">フィッシング対策協議会「月次報告書」</a> ／ <a href="https://www.antiphishing.jp/news/info/" target="_blank" rel="noopener">フィッシング対策協議会「協議会からのお知らせ」</a></p>
+</div>
+</details>
+
+<div class="section-h key"><span class="ico">⚠️</span><h2>制度・法改正ウォッチ</h2><span class="badge">重点</span><span class="note">要チェック</span></div>
+
+<details>
+<summary><span class="ttl">IPA、2026年9月のMicrosoft製品脆弱性を注意喚起。<b>悪用確認済みが2件</b></span><span class="tag">注意喚起</span><span class="toggle"></span></summary>
+<div class="body">
+<p>IPAは9月9日、2026年9月のMicrosoft製品の脆弱性対策について注意喚起を発表しました。今回の月例更新には、Microsoft社が「悪用の事実を確認済み」と公表した脆弱性が2件（CVE-2026-81963、CVE-2026-85880）含まれています。</p>
+<p>悪用が確認された脆弱性を放置すると、パソコンを外部から制御されたり、アプリケーションが異常終了したりする被害につながるおそれがあります。Windows Updateによる更新プログラムの適用が基本的な対策ですが、業務用ソフトとの相性を懸念して適用を後回しにしている事業者も見られます。</p>
+<p>「動いているから触らない」という運用は、悪用済みの脆弱性がある月には特にリスクが高くなります。社内のPC台帳で更新プログラムの適用状況を棚卸しし、未適用の端末があれば早めの対応を、専門業者への一括確認も含めて検討してください。</p>
+<p class="src">出典: <a href="https://www.ipa.go.jp/security/security-alert/2026/0909-ms.html" target="_blank" rel="noopener">IPA「Microsoft 製品の脆弱性対策について(2026年9月)」</a></p>
+</div>
+</details>
+
+<details>
+<summary><span class="ttl">経産省・IPA、<b>サイバーセキュリティお助け隊サービス（新類型）</b>の実証事業を開始</span><span class="tag">制度</span><span class="toggle"></span></summary>
+<div class="body">
+<p>経済産業省とIPAは9月15日、中小企業向け「サイバーセキュリティお助け隊サービス（新類型）」の実証事業を開始すると発表しました。サプライチェーン全体のセキュリティ強化を目的に、IPA認定事業者のサービスを実際に導入し、内容や価格の妥当性を検証する取り組みです。</p>
+<p>従来の「お助け隊サービス」は月額1万円以内で見守りや緊急駆けつけ、相談窓口、簡易サイバー保険をパッケージ提供するもので、デジタル化・AI導入補助金のセキュリティ対策推進枠を使えば、利用料の最大2年分について中小企業は1/2、小規模事業者は2/3（上限150万円）の補助を受けられます。新類型はこの仕組みをさらに発展させる位置づけです。</p>
+<p>自社に専任のセキュリティ担当者を置けない事業者ほど、月額制サービスと補助金の組み合わせは導入しやすい選択肢です。まずはIPA認定事業者の一覧を確認し、既存の取引先が対応しているかを聞いてみるのが第一歩になります。</p>
+<p class="src">出典: <a href="https://www.meti.go.jp/press/2026/09/20260915001.html" target="_blank" rel="noopener">経済産業省「中小企業向け「サイバーセキュリティお助け隊サービス（新類型）」実証事業を開始します」</a></p>
+</div>
+</details>
+
+<div class="section-h"><span class="ico">🎪</span><h2>展示会・イベント情報</h2><span class="note">要事前登録</span></div>
+
+<details>
+<summary><span class="ttl">「Security Days Fall 2026」名古屋会場、<b>10月28・29日</b>にJPタワー名古屋で開催</span><span class="tag">展示会</span><span class="toggle"></span></summary>
+<div class="body">
+<p>セキュリティ課題の解決をテーマにした展示会・セミナーイベント「Security Days Fall 2026」の名古屋会場が、2026年10月28日（水）・29日（木）にJPタワー名古屋ホール＆カンファレンスで開催されます。東京・大阪・福岡・札幌など全国5地域で開催されるシリーズの一つです。</p>
+<p>セキュリティベンダー各社によるセミナーと展示が中心で、ランサムウェア対策や生成AIを悪用した攻撃への防御など、実務担当者向けの最新動向を無料で聞ける機会です。参加企業からの講演も複数予定されています。</p>
+<p>経営者や情報システム担当者が、自社だけでなく取引先の対策水準を知る良い機会になります。参加には事前登録が必要な場合が多いため、公式サイトで最新のプログラムと登録要否を確認してから来場計画を立ててください（要確認）。</p>
+<p class="src">出典: <a href="https://f2ff.jp/event/secd" target="_blank" rel="noopener">Security Days Fall 2026 公式サイト</a> ／ <a href="https://www.pentasecurity.co.jp/blog/2026/09/24/security-days-f26ngo/" target="_blank" rel="noopener">ペンタセキュリティ「Security Days Fall 2026 Nagoyaにて講演」</a></p>
+</div>
+</details>
+
+<div class="section-h"><span class="ico">💰</span><h2>お客様が使える補助金・助成金</h2><span class="note">自治体ごとに異なります</span></div>
+
+<details>
+<summary><span class="ttl">デジタル化・AI導入補助金2026「セキュリティ対策推進枠」、<b>6次締切は10月30日</b></span><span class="tag">補助金</span><span class="toggle"></span></summary>
+<div class="body">
+<p>中小企業向け「デジタル化・AI導入補助金2026」のセキュリティ対策推進枠は、5次締切（9月29日17時）に続く6次締切が2026年10月30日（金）17時に設定されています。</p>
+<p>同枠は、サイバー攻撃対策となるセキュリティサービスやツールの導入費用を補助するもので、前述の「お助け隊サービス」利用料もこの枠の対象です。9月29日の締切に間に合わなかった事業者も、10月30日の6次締切に向けて準備を進める余地があります。</p>
+<p>申請にはGビズIDプライムアカウントの取得やSECURITY ACTIONの宣言など、事前に数週間かかる手続きが含まれます。導入したいセキュリティ対策が決まっている事業者は、逆算して今月中に準備を始めることをおすすめします（詳細は要確認）。</p>
+<p class="src">出典: <a href="https://it-shien.smrj.go.jp/schedule/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026「事業スケジュール」</a> ／ <a href="https://it-shien.smrj.go.jp/applicant/subsidy/security/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026「セキュリティ対策推進枠」</a></p>
+</div>
+</details>
+
+<div class="strong">
+<h3>💡 株式会社たろうの強み視点</h3>
+<p>今週の池上通信機の事案やMicrosoft製品の悪用済み脆弱性のニュースは「他社の話だから関係ない」と思われがちですが、実際には取引先経由の連絡や、更新を後回しにしたパソコンから中小企業にも被害が及びます。愛知県内を中心にネットワークセキュリティ・PCサポートを手がける株式会社たろうは、「パソコンで困った」を電話一本ですぐ解決する“解決やさん”として、更新プログラムの適用状況の点検から、お助け隊サービスや補助金活用の相談まで、最高のフットワークでその場で対応します。何か不安を感じたら、まずは電話一本でご相談ください。</p>
+</div>
+
+<div class="memo">
+<h3>📝 今週のひとことメモ</h3>
+<p>今週はランサムウェア集団Qilinによる池上通信機への攻撃疑惑、フィッシング対策協議会が報告した不可視Unicode文字を使う新しい手口、悪用済み脆弱性を含むMicrosoftの9月更新など、攻撃の手口も対象も広がっていることが分かりました。経産省・IPAはお助け隊サービス新類型の実証を始め、中小企業支援の枠組みも拡充が続いています。10月28〜29日のSecurity Days Fall名古屋、10月30日のデジタル化・AI導入補助金6次締切と、今後の予定も押さえておきましょう。</p>
+</div>
+
+</main>
+<footer>
+株式会社たろう ウィークリー・セキュリティ情報 ｜ 週刊 業界情報ダイジェスト<br>
+※他社記事・写真は転載せず、要点を要約し出典リンクで掲載しています。各情報は出典元をご確認ください。
+</footer>
+</div>
+</body>
+</html>
