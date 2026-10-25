@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="愛知県中心のネットワークセキュリティ／PCサポート「株式会社たろう」がお届けする週刊セキュリティ情報（2026年10月26日号）。脅威動向・制度・イベント・補助金をまとめています。">
+<title>株式会社たろう ウィークリー・セキュリティ情報</title>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "株式会社たろう", "url": "https://news.kagi.work/", "description": "愛知県を中心に活動する、中小企業・個人向けのネットワークセキュリティ／IT・パソコンサポート会社。ネットセキュリティやパソコン全般の相談に最高のフットワークで対応し、『パソコンで困った』を電話一本ですぐ解決する“解決やさん”。ウイルス・ランサムウェア対策、ネットワーク設定、トラブル復旧、機器導入をワンストップで支援する。", "areaServed": [{"@type": "State", "name": "愛知県"}, {"@type": "City", "name": "名古屋市"}], "knowsAbout": ["ネットワークセキュリティ", "ランサムウェア対策", "ウイルス対策", "パソコン修理", "IT相談", "ネットワーク構築", "データ復旧・バックアップ", "サポート詐欺対策"], "address": {"@type": "PostalAddress", "addressRegion": "愛知県", "addressCountry": "JP"}}
+</script>
+<style>
+:root{ --navy:#0e6e8a; --navy2:#1596b4; --brass:#f39c12; --brass-dk:#c87f0a; --ink:#20262c; --muted:#6b7580; --line:#e4e7ea; --tint:#eef1f4; --link:#375a7a; --memo-bg:#eaf5f8; --memo-bd:#0e6e8a; --strong-bg:#fdf3e0; --strong-bd:#f39c12; }
+*{box-sizing:border-box;}
+body{margin:0; color:var(--ink); background:#f4f6f8; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",system-ui,sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased;}
+.wrap{max-width:820px; margin:0 auto; background:#fff;}
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%); color:#fff; padding:34px 32px 30px;}
+header .title{display:flex; align-items:center; gap:14px; margin:0; font-size:31px; font-weight:800; letter-spacing:.02em;}
+header .title .ico{font-size:34px; line-height:1;}
+header .sub{margin:12px 0 0; font-size:15px; color:#e3e8ee; font-weight:400;}
+header .sub .date{color:#fff; font-weight:600;}
+main{padding:28px 32px 8px;}
+.section-h{display:flex; align-items:baseline; gap:12px; border-left:5px solid var(--navy); padding-left:12px; margin:30px 0 14px;}
+.section-h .ico{font-size:22px;}
+.section-h h2{margin:0; font-size:21px; font-weight:800; color:var(--navy);}
+.section-h .note{font-size:13px; color:var(--muted);}
+.section-h.key{border-left-color:var(--brass);}
+.section-h.key h2{color:var(--brass-dk);}
+.section-h.key .badge{font-size:11px; font-weight:800; color:#fff; background:var(--brass); border-radius:5px; padding:2px 8px; margin-left:2px;}
+details{border:1px solid var(--line); border-radius:12px; background:#fff; margin:0 0 14px; overflow:hidden; box-shadow:0 1px 2px rgba(15,43,70,.04);}
+details[open]{background:var(--tint);}
+summary{list-style:none; cursor:pointer; padding:16px 18px; display:flex; align-items:flex-start; gap:10px; font-size:16.5px; font-weight:700; color:var(--ink);}
+summary::-webkit-details-marker{display:none;}
+summary .toggle{margin-left:auto; color:var(--brass-dk); font-size:22px; font-weight:700; line-height:1; flex:none;}
+summary .ttl{flex:1 1 auto; min-width:0;}
+details[open] summary .toggle::after{content:"\2013";}
+details:not([open]) summary .toggle::after{content:"+";}
+.tag{display:inline-block; font-size:12px; font-weight:700; color:var(--navy2); background:#e6eaee; border-radius:6px; padding:3px 9px; margin-left:6px; vertical-align:2px; flex:none;}
+.body{padding:2px 18px 18px; border-top:1px dashed var(--line); margin-top:-2px;}
+.body p{margin:12px 0 8px; font-size:15px;}
+.src{font-size:13.5px;}
+.src a{color:var(--link); text-decoration:none; border-bottom:1px solid rgba(55,90,122,.35);}
+.term{font-size:13px; color:var(--muted); background:#f2f5f8; border-radius:6px; padding:8px 12px; margin:10px 0 0;}
+.term b{color:var(--navy2);}
+.strong{background:var(--strong-bg); border-left:5px solid var(--strong-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.strong h3{margin:0 0 6px; font-size:16px; color:var(--brass-dk);}
+.strong p{margin:0; font-size:15px;}
+.memo{background:var(--memo-bg); border-left:5px solid var(--memo-bd); border-radius:8px; padding:16px 18px; margin:8px 0 6px;}
+.memo h3{margin:0 0 6px; font-size:16px; color:var(--memo-bd);}
+.memo p{margin:0; font-size:15px;}
+footer{margin-top:26px; padding:18px 32px 26px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted); text-align:center;}
+a{color:var(--link);}
+@media print{ body{background:#fff;} .wrap{max-width:none;} details{break-inside:avoid; box-shadow:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1 class="title"><span class="ico">🛡️</span>株式会社たろう ウィークリー・セキュリティ情報</h1>
+<p class="sub"><span class="date">2026年10月26日（月）</span> ｜ ネットワークセキュリティ・パソコンサポート 週刊まとめ</p>
+</header>
+<main>
+<div class="section-h"><span class="ico">🗞️</span><h2>業界ニュース</h2><span class="note">中部・全国</span></div>
+
+<details open="">
+<summary><span class="ttl">【続報】相次ぐ不正アクセスで<b>JPCERT/CCが注意喚起を更新</b>：AI型の攻撃基盤の悪用も追記</span><span class="tag">安全</span><span class="toggle"></span></summary>
+<div class="body">
+<p>JPCERT/CCは、国内で相次ぐ不正アクセスによる個人情報漏えいについての注意喚起を10月8日に公開し、その後も更新を続けています。10月23日の更新では、AIを使ったペネトレーションテスト用の基盤が悪用された攻撃の試みが「ケースE」として加わりました。インターネットに公開されたWebアプリが主な標的で、公開中のWSUSサーバーへの試行も含まれるとされています。</p>
+<p>また、10月16日にはIPAが「不正アクセス特別相談窓口」を開設し、被害を受けた、またはそのおそれがある組織の初動対応の相談に乗っています。外部に公開しているシステムの点検は、直近1か月分のログ確認から始めるのが現実的です。「うちは小さいから大丈夫」とは言えない状況ですので、不安な点があれば早めに専門家へ相談しましょう。</p>
+<p class="src">出典: <a href="https://www.jpcert.or.jp/at/2026/at260030.html" target="_blank" rel="noopener">JPCERT/CC「直近で相次いでいる国内組織における不正アクセスに関する注意喚起」</a> ／ <a href="https://www.ipa.go.jp/pressrelease/2026/press20261016.html" target="_blank" rel="noopener">IPA「不正アクセス特別相談窓口の開設について」</a></p>
+</div>
+</details>
+
+<details>
+<summary><span class="ttl">ソースネクスト<b>最大約2,252万件</b>、ヤマト運輸<b>約526万件</b>：大手の情報漏えい公表が止まらない</span><span class="tag">動向</span><span class="toggle"></span></summary>
+<div class="body">
+<p>ソースネクストは10月15日、会員情報を管理するシステムが不正アクセスを受け、パスワードを含む最大2,251万9,960件の情報が流出した可能性があると発表しました。同社は、パスワードの再設定と、他のサービスで同じパスワードを使い回している場合の変更を呼びかけています。</p>
+<p>ヤマト運輸は10月16日、「クロネコ代金後払いサービス」の調査結果として、顧客情報約526万件を含む計約531万件の持ち出しを公表しました。クレジットカード情報とパスワードは含まれないとのことです。ITmediaの集計では、10月6〜19日の約2週間だけで33事案が公表されています。取引先や委託先を経由した被害も多く、パスワードの使い回しの見直しが急務です。</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/enterprise/articles/2610/20/news061.html" target="_blank" rel="noopener">ITmedia「ソースネクスト、ヤマトなど数十社2026年10月総まとめ第2弾」</a> ／ <a href="https://www.sourcenext.com/support/i/2026/1015_info/" target="_blank" rel="noopener">ソースネクスト 公表ページ</a> ／ <a href="https://www.yamato-hd.co.jp/important/info_260929_1.html" target="_blank" rel="noopener">ヤマトHD 公表ページ</a></p>
+</div>
+</details>
+
+<details>
+<summary><span class="ttl"><b>PHPに認証不要で攻撃される重大な脆弱性</b>、Javaも55件修正：10月21日に相次ぎ公表</span><span class="tag">技術</span><span class="toggle"></span></summary>
+<div class="body">
+<p>The PHP Groupは10月21日（協定世界時）、認証なしで外部からコードを実行されるおそれのある2件の重大な脆弱性を修正した版を公開しました。深刻度は10点満点中9.2とされ、修正版はPHP 8.5.12、8.4.27、8.3.36、8.2.35です。IPAは、公表時点で悪用は確認していないとしつつ、早めの適用準備を求めています。</p>
+<p>同じ頃、IPAはOracle Javaの脆弱性についても注意喚起を出しました。Oracleが10月20日に公開した定例更新のうちJava SE関連は55件で、49件は認証なしでネットワーク経由の悪用が想定されます。Webサイトの裏側や業務ソフト、機器に組み込まれて使われていることも多いので、「どこで使っているか」の洗い出しが第一歩です。</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/enterprise/articles/2610/22/news054.html" target="_blank" rel="noopener">ITmedia「PHPに深刻な脆弱性 更新だけで対策は終わらない」</a> ／ <a href="https://www.itmedia.co.jp/enterprise/articles/2610/22/news058.html" target="_blank" rel="noopener">ITmedia「Oracle Javaに55件の脆弱性」</a> ／ <a href="https://www.ipa.go.jp/security/security-alert/2026/1021-jre.html" target="_blank" rel="noopener">IPA「Oracle Java の脆弱性対策について(2026年10月)」</a></p>
+</div>
+</details>
+
+<div class="section-h key"><span class="ico">⚠️</span><h2>制度・法改正ウォッチ</h2><span class="badge">重点</span><span class="note">要チェック</span></div>
+
+<details open="">
+<summary><span class="ttl">個人情報保護委員会が<b>注意喚起とWARNINGを改訂</b>：不要な個人データの消去やAPI管理を明示</span><span class="tag">制度</span><span class="toggle"></span></summary>
+<div class="body">
+<p>個人情報保護委員会は10月7日、大規模な漏えい事案を受けて事業者向けの注意喚起を公表し、不正アクセス対策の「WARNING」も改訂しました。新たに「APIが悪用される事例」が加わり、管理から漏れたAPIの存在や、会員IDなどの書き換えで他人の情報が見られる状態、アクセス回数の制限がない点などが問題として挙げられています。</p>
+<p>あわせて、利用する必要がなくなった個人データは遅滞なく消去するよう努めることも強調されました。安全管理措置の見直しは、2027年4月の確定が予定されています。顧客情報を預かるすべての事業者が対象になり得ますので、保管データの棚卸しと、委託先を含めた管理体制の確認を今のうちに進めておくと安心です。</p>
+<p class="src">出典: <a href="https://www.ppc.go.jp/news/careful_information/261007_alert/" target="_blank" rel="noopener">個人情報保護委員会「大規模な漏えい等事案を踏まえた対応について（注意喚起）」</a> ／ <a href="https://www.ppc.go.jp/files/pdf/261007_warning.pdf" target="_blank" rel="noopener">同「WARNING 不正アクセスによる個人データ漏えい防止のための注意喚起」</a></p>
+</div>
+</details>
+
+<div class="section-h"><span class="ico">🎪</span><h2>展示会・イベント情報</h2><span class="note">要事前登録</span></div>
+
+<details open="">
+<summary><span class="ttl">【続報】<b>メッセナゴヤ2026</b>：11月11日〜13日、オンライン機能は本日10月26日から利用開始</span><span class="tag">展示会</span><span class="toggle"></span></summary>
+<div class="body">
+<p>日本最大級の異業種交流展示会「メッセナゴヤ2026」は、11月11日（水）〜13日（金）の10時〜17時、ポートメッセなごや第1展示館で開かれます。入場は無料で、来場登録が必要です。前号でお伝えした会期に変更はありません。</p>
+<p>新しい情報として、出展者との商談などに使えるオンライン機能が10月26日10時から11月30日17時まで利用できます。会場に行けない方も、出展者一覧から取引先候補やITサービスを探せます。業務のデジタル化やセキュリティ対策の相談先探しにも使えます。</p>
+<p class="src">出典: <a href="https://www.messenagoya.jp/about" target="_blank" rel="noopener">メッセナゴヤ2026「展示会概要」</a></p>
+</div>
+</details>
+
+<div class="section-h"><span class="ico">💰</span><h2>お客様が使える補助金・助成金</h2><span class="note">自治体ごとに異なります</span></div>
+
+<details open="">
+<summary><span class="ttl">【続報・要確認】<b>デジタル化・AI導入補助金2026</b>：6次締切は10月30日、7次以降は未確認</span><span class="tag">補助金</span><span class="toggle"></span></summary>
+<div class="body">
+<p>前号で紹介したデジタル化・AI導入補助金2026のセキュリティ対策推進枠は、6次締切が10月30日とされています。補助金情報サイトでは、6次より後の締切日はまだ公開されておらず、予算の状況などに応じて追加される見込みと案内されています。なお、同サイトの日程表は通常枠を中心に掲載しているため、セキュリティ対策推進枠の日付は要確認です。</p>
+<p>この枠の過去の採択状況は、1次締切が申請88者に対し採択64者、2次締切が申請28者に対し採択20者と掲載されています。申請にはIT導入支援事業者との準備が必要になるため、検討中の方は早めに公式の公募要領と事務局サイトで最新の締切日をご確認ください。</p>
+<p class="src">出典: <a href="https://hojyokin-portal.jp/columns/degital_ai_schedule" target="_blank" rel="noopener">補助金ポータル「デジタル化・AI導入補助金 スケジュール」</a> ／ <a href="https://sogyotecho.jp/news/20260619digital-ai/" target="_blank" rel="noopener">創業手帳「デジタル化・AI導入補助金」</a></p>
+</div>
+</details>
+
+<div class="strong">
+<h3>💡 株式会社たろうの強み視点</h3><p>今週は、大手企業の情報漏えいの公表が相次ぎ、PHPやJavaの重大な脆弱性も出ました。「どこから手をつければいいのか分からない」と感じる方も多いはずです。株式会社たろうは、愛知県を中心に、ネットワークセキュリティとパソコンサポートを手がけています。「パソコンで困った」を電話一本ですぐ解決する“解決やさん”として、最高のフットワークでお伺いします。使い回しているパスワードの見直しや、古いソフトの更新、社内機器の点検など、小さな不安のうちにご相談ください。お気軽にお電話ください。</p></div>
+<div class="memo">
+<h3>📝 今週のひとことメモ</h3><p>漏えいのニュースを見たら、まず「自分のパスワードを他のサービスと使い回していないか」を確認しましょう。大きな対策の前に、今日できる小さな見直しが一番効果的です。</p></div>
+</main>
+<footer>
+株式会社たろう ウィークリー・セキュリティ情報 ｜ 週刊 業界情報ダイジェスト<br>
+※他社記事・写真は転載せず、要点を要約し出典リンクで掲載しています。各情報は出典元をご確認ください。
+</footer>
+</div>
+</body>
+</html>
